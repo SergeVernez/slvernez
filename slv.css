@@ -7,7 +7,7 @@
 :root {
 	--couleur-principale-body: #faf7f0;
 	--couleur-secondaire-claire: #d8d2c2;
-	--couleur-accentuee: #b17457;
+	--couleur-orange: #b17457;
 	--couleur-foncee: #4a4947;
 	--couleur-noire: #131313;
 	--couleur-gris-claire: #e3e3e3;
@@ -15,4 +15,39 @@
 }
 body {
 	background-color: var(--couleur-principale-body);
+}
+
+nav {
+	background-color: var(--couleur-noire);
+	height: 145px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+}
+
+nav ul li {
+	margin: 0 15px;
+}
+
+nav ul li a {
+	color: var(--couleur-principale-body);
+	text-decoration: none;
+	font-size: 1.2em;
+	transition: color 0.3s ease;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+nav ul li a:hover {
+	color: var(--couleur-accentuee);
 }
