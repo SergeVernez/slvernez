@@ -21,23 +21,23 @@ body {
 header {
 	background-color: var(--couleur-noire);
 	display: flex;
-	justify-content: center; /* Centre la nav horizontalement */
+	justify-content: center;
 }
 
 nav {
 	display: flex;
 	align-items: center;
-	justify-content: space-between; /* Sépare le logo et les liens de navigation */
+	justify-content: space-between;
 	height: 145px;
 	padding: 0 20px;
-	width: 80%; /* Définit la largeur de la nav à 80% */
+	width: 80%;
 }
 
 .logoNav {
 	margin-right: 40px;
 }
 .logo {
-	width: 120px; /*logo test a remplacer par un svg */
+	width: 105px; /*logo test a remplacer par un svg */
 	height: auto;
 	margin-right: 40px;
 }
@@ -65,10 +65,12 @@ nav ul li a {
 	display: flex;
 	align-items: center;
 	height: 100%;
+	transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
 	color: var(--couleur-orange);
+	transform: translateY(-5px);
 }
 
 .social-icons {
