@@ -13,25 +13,44 @@
 	--couleur-gris-claire: #e3e3e3;
 	--couleur-gris-foncee: #f7f7f7;
 }
+
 body {
 	background-color: var(--couleur-principale-body);
 }
 
-nav {
+header {
 	background-color: var(--couleur-noire);
-	height: 145px;
+	display: flex;
+	justify-content: center; /* Centre la nav horizontalement */
+}
+
+nav {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between; /* Sépare le logo et les liens de navigation */
+	height: 145px;
+	padding: 0 20px;
+	width: 80%; /* Définit la largeur de la nav à 80% */
+}
+
+.logoNav {
+	margin-right: 40px;
+}
+.logo {
+	width: 120px; /*logo test a remplacer par un svg */
+	height: auto;
+	margin-right: 40px;
 }
 
 nav ul {
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
+	/* margin: 0;
+	padding: 0; */
 	display: flex;
-	justify-content: space-around;
-	width: 40%;
+	justify-content: center;
+	align-items: center;
+	gap: 100px;
+	font-size: 18px;
 }
 
 nav ul li {
@@ -49,5 +68,22 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-	color: var(--couleur-accentuee);
+	color: var(--couleur-orange);
+}
+
+.social-icons {
+	/*a remplacer par des svg */
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.social-icons a {
+	display: flex;
+	align-items: center;
+}
+
+.social-icons img {
+	width: 30px;
+	height: autow;
 }
