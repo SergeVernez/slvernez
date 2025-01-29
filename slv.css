@@ -1,4 +1,14 @@
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--couleur-principale-claire: #faf7f0;
+	--couleur-secondaire-claire: #d8d2c2;
+	--couleur-accentuee: #b17457;
+	--couleur-foncee: #4a4947;
+	--couleur-noire: #131313;
+	--couleur-gris-claire: #e3e3e3;
+	--couleur-gris-foncee: #f7f7f7;
 }
