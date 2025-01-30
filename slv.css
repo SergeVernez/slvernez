@@ -3,6 +3,29 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+/* .economica-regular {
+  font-family: "Economica", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.economica-bold {
+  font-family: "Economica", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.economica-regular-italic {
+  font-family: "Economica", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.economica-bold-italic {
+  font-family: "Economica", serif;
+  font-weight: 700;
+  font-style: italic;
+} */
 
 :root {
 	--couleur-principale-body: #faf7f0;
@@ -37,7 +60,7 @@ nav {
 	margin-right: 40px;
 }
 .logo {
-	width: 105px; /*logo test a remplacer par un svg */
+	width: 100px; /*logo test a remplacer par un svg */
 	height: auto;
 	margin-right: 40px;
 }
@@ -55,6 +78,10 @@ nav ul {
 
 nav ul li {
 	margin: 0 15px;
+	font-family: "Economica", serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 25px;
 }
 
 nav ul li a {
