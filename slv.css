@@ -3,31 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-/* .economica-regular {
-  font-family: "Economica", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.economica-bold {
-  font-family: "Economica", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.economica-regular-italic {
-  font-family: "Economica", serif;
-  font-weight: 400;
-  font-style: italic;
-}
-
-.economica-bold-italic {
-  font-family: "Economica", serif;
-  font-weight: 700;
-  font-style: italic;
-} */
 
 :root {
+	font-size: 16px; /* Définit la taille de base à 16px */
 	--couleur-principale-body: #faf7f0;
 	--couleur-secondaire-claire: #d8d2c2;
 	--couleur-orange: #b17457;
@@ -39,13 +17,16 @@
 
 body {
 	background-color: var(--couleur-principale-body);
+	font-size: 1rem; /* Équivalent à 16px */
 }
+
 main {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
+
 header {
 	background-color: var(--couleur-noire);
 	display: flex;
@@ -56,18 +37,19 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 145px;
-	padding: 0 20px;
+	height: 9.0625rem; /* Équivalent à 145px */
+	padding: 0 1.25rem; /* Équivalent à 20px */
 	width: 80%;
 }
 
 .logoNav {
-	margin-right: 40px;
+	margin-right: 2.5rem; /* Équivalent à 40px */
 }
+
 .logo {
-	width: 100px; /*logo test a remplacer par un svg */
+	width: 6.25rem; /* Équivalent à 100px */
 	height: auto;
-	margin-right: 40px;
+	margin-right: 2.5rem; /* Équivalent à 40px */
 }
 
 nav ul {
@@ -75,16 +57,15 @@ nav ul {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 100px;
-	font-size: 18px;
+	gap: 6.25rem; /* Équivalent à 100px */
+	font-size: 1.125rem; /* Équivalent à 18px */
 }
 
 nav ul li {
-	margin: 0 15px;
+	margin: 0 0.9375rem; /* Équivalent à 15px */
 	font-family: "Economica", serif;
 	font-weight: 400;
-	font-style: normal;
-	font-size: 25px;
+	font-size: 1.5625rem; /* Équivalent à 25px */
 }
 
 nav ul li a {
@@ -100,14 +81,13 @@ nav ul li a {
 
 nav ul li a:hover {
 	color: var(--couleur-orange);
-	transform: translateY(-5px);
+	transform: translateY(-0.3125rem); /* Équivalent à -5px */
 }
 
 .social-icons {
-	/*a remplacer par des svg */
 	display: flex;
 	align-items: center;
-	gap: 30px;
+	gap: 1.875rem; /* Équivalent à 30px */
 }
 
 .social-icons a {
@@ -116,13 +96,14 @@ nav ul li a:hover {
 }
 
 .social-icons img {
-	width: 30px;
+	width: 1.875rem; /* Équivalent à 30px */
 	height: auto;
 }
+
 h1 {
-	font-family: "economica";
+	font-family: "Economica", serif;
 	font-weight: 600;
-	font-size: 38px;
+	font-size: 2.375rem; /* Équivalent à 38px */
 }
 
 .container {
@@ -130,23 +111,26 @@ h1 {
 	max-width: 80%;
 	justify-content: space-between;
 	align-items: stretch;
-	margin: 80px;
+	margin: 5rem auto; /* Équivalent à 80px */
 }
+
 .infoContainer {
 	display: flex;
 	flex: 1;
 	flex-direction: column;
 	justify-content: center;
-	padding: 50px;
+	padding: 3.125rem; /* Équivalent à 50px */
 }
+
 .infoContainer h1,
 .infoContainer p {
-	margin-bottom: 30px;
+	margin-bottom: 1.875rem; /* Équivalent à 30px */
 	width: 80%;
 }
+
 p {
 	font-family: "Montserrat", sans-serif;
-	font-size: 16px;
+	font-size: 1rem; /* Équivalent à 16px */
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--couleur-foncee);
@@ -155,32 +139,35 @@ p {
 .cta {
 	background-color: var(--couleur-orange);
 	color: var(--couleur-principale-body);
-	width: 300px;
-	height: 45px;
+	width: 18.75rem; /* Équivalent à 300px */
+	height: 2.8125rem; /* Équivalent à 45px */
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-family: "Economica", serif;
-	font-size: 30px;
+	font-size: 1.875rem; /* Équivalent à 30px */
 	font-weight: 700;
 	text-decoration: none;
-	box-shadow: 3px 3px 5px var(--couleur-secondaire-claire);
+	box-shadow: 0.1875rem 0.1875rem 0.3125rem var(--couleur-secondaire-claire); /* Équivalent à 3px 3px 5px */
 	text-align: center;
 	transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
 .cta:hover {
-	transform: translateY(-5px);
+	transform: translateY(-0.3125rem); /* Équivalent à -5px */
 }
+
 .imgContainer {
 	flex: 1;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: var(--couleur-secondaire-claire);
-	padding: 170px;
+	padding: 10.625rem; /* Équivalent à 170px */
 }
+
 .imgContainer img {
 	width: 100%;
-	max-width: 400px;
+	max-width: 25rem; /* Équivalent à 400px */
 	height: auto;
 }
