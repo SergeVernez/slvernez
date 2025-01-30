@@ -40,7 +40,12 @@
 body {
 	background-color: var(--couleur-principale-body);
 }
-
+main {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 header {
 	background-color: var(--couleur-noire);
 	display: flex;
@@ -67,8 +72,6 @@ nav {
 
 nav ul {
 	list-style-type: none;
-	/* margin: 0;
-	padding: 0; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -119,13 +122,65 @@ nav ul li a:hover {
 h1 {
 	font-family: "economica";
 	font-weight: 600;
-	font-size: 35px;
-	font-style: normal;
+	font-size: 38px;
 }
+
 .container {
 	display: flex;
-	flex-wrap: wrap;
 	max-width: 80%;
-	justify-content: space-around;
-	margin-top: 80px;
+	justify-content: space-between;
+	align-items: stretch;
+	margin: 80px;
+}
+.infoContainer {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: center;
+	padding: 50px;
+}
+.infoContainer h1,
+.infoContainer p {
+	margin-bottom: 30px;
+	width: 80%;
+}
+p {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--couleur-foncee);
+}
+
+.cta {
+	background-color: var(--couleur-orange);
+	color: var(--couleur-principale-body);
+	width: 300px;
+	height: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Economica", serif;
+	font-size: 30px;
+	font-weight: 700;
+	text-decoration: none;
+	box-shadow: 3px 3px 5px var(--couleur-secondaire-claire);
+	text-align: center;
+	transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.cta:hover {
+	transform: translateY(-5px);
+}
+.imgContainer {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--couleur-secondaire-claire);
+	padding: 170px;
+}
+.imgContainer img {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
 }
