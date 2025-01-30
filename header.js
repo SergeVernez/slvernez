@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			navLinks.forEach((link) => {
 				if (link.getAttribute("href") === currentPath) {
-					link.classList.add("active"); // Ajouter la classe "active" au lien correspondant
+					link.classList.add("active"); // Ajouter de la classe css "active" au lien correspondant
 				}
 			});
 		})
