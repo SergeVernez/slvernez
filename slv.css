@@ -27,92 +27,6 @@ main {
 	align-items: center;
 }
 
-header {
-	background-color: var(--couleur-noire);
-	display: flex;
-	justify-content: center;
-}
-
-/*------------------- -------------------nav------------------- -------------------*/
-nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: 9.0625rem; /* Équivalent à 145px */
-	padding: 0 1.25rem; /* Équivalent à 20px */
-	width: 80%;
-}
-
-.logoNav {
-	margin-right: 2.5rem; /* Équivalent à 40px */
-}
-
-.logo {
-	width: 6.25rem; /* Équivalent à 100px */
-	height: auto;
-	margin-right: 2.5rem; /* Équivalent à 40px */
-}
-
-nav ul {
-	list-style-type: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 6.25rem; /* Équivalent à 100px */
-	font-size: 1.125rem; /* Équivalent à 18px */
-}
-
-nav ul li {
-	margin: 0 0.9375rem; /* Équivalent à 15px */
-	font-family: "Economica", serif;
-	font-weight: 400;
-	font-size: 1.5625rem; /* Équivalent à 25px */
-}
-
-nav ul li a {
-	color: var(--couleur-principale-body);
-	text-decoration: none;
-	font-size: 1.2em;
-	transition: color 0.3s ease;
-	display: flex;
-	align-items: center;
-	height: 100%;
-	transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-nav ul li a:hover {
-	color: var(--couleur-orange);
-	transform: translateY(-0.3125rem); /* Équivalent à -5px */
-}
-
-.social-icons {
-	display: flex;
-	align-items: center;
-	gap: 1.875rem; /* Équivalent à 30px */
-}
-
-.social-icons a {
-	display: flex;
-	align-items: center;
-}
-
-.social-icons img {
-	width: 1.875rem; /* Équivalent à 30px */
-	height: auto;
-}
-
-/*------ page active ------*/
-nav ul li a.active {
-	color: var(--couleur-orange); /* Couleur pour le lien actif */
-	font-weight: bold; /* Facultatif : mettre en gras pour plus de visibilité */
-}
-
-nav ul li a:hover {
-	color: var(--couleur-orange);
-	transform: translateY(-0.3125rem); /* Équivalent à -5px */
-}
-/* ------------------------------------------- fin de nav ------------------------------------------------ */
-
 main {
 	display: flex;
 	flex-direction: column;
@@ -137,7 +51,7 @@ h2 {
 	flex: 1;
 	flex-direction: column;
 	justify-content: center;
-	padding: 3.125rem; /* Équivalent à 50px */
+	padding: 3.125rem;	/* Équivalent à 50px */
 }
 
 .infoContainer h1,
