@@ -32,8 +32,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			// Ajout du gestionnaire de clic pour le bouton scroll top
 			document.getElementById("scrollTopBtn").addEventListener("click", function () {
-				document.body.scrollTop = 0; // Pour Apple
-				document.documentElement.scrollTop = 0;
+				window.scrollTo({
+					top: 0,
+					behavior: "smooth",
+				});
 			});
 		})
 		.catch((error) => {
