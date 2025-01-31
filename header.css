@@ -15,13 +15,13 @@ nav {
 }
 
 .logoNav {
-	margin-right: 2.5rem; /* Équivalent à 40px */
+	/* margin-right: 2.5rem; Équivalent à 40px */
 }
 
 .logo {
 	width: 6.25rem; /* Équivalent à 100px */
 	height: auto;
-	margin-right: 2.5rem; /* Équivalent à 40px */
+	margin-left: 1.25rem;
 }
 
 nav ul {
