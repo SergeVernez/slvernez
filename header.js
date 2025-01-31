@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		.then((data) => {
 			document.getElementById("header-container").innerHTML = data;
 
-			// Ajouter la classe active au lien correspondant
+			// Ajouter la classe de la page active dans la nav
 			const currentPath = window.location.pathname.split("/").pop();
 			const navLinks = document.querySelectorAll("nav ul li a");
 
@@ -14,23 +14,25 @@ document.addEventListener("DOMContentLoaded", function () {
 					link.classList.add("active"); // Ajouter la classe "active" au lien correspondant
 				}
 			});
-			// ajout scroll top
-			window.onscroll = function () {
-				scrollFunction();
-			};
 
+			// ajout scroll top
 			function scrollFunction() {
 				const scrollTopBtn = document.getElementById("scrollTopBtn");
-				if (document.body.scrollTop > 200 || document.getElement.scrollFunction > 200) {
+				if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
 					scrollTopBtn.style.display = "block";
 				} else {
 					scrollTopBtn.style.display = "none";
 				}
 			}
 
-			// gestion pour le click
+			// Ajout du gestionnaire de défilement
+			window.onscroll = function () {
+				scrollFunction();
+			};
+
+			// Ajout du gestionnaire de clic pour le bouton scroll top
 			document.getElementById("scrollTopBtn").addEventListener("click", function () {
-				document.body.scrollTop = 0; //pour Apple
+				document.body.scrollTop = 0; // Pour Apple
 				document.documentElement.scrollTop = 0;
 			});
 		})
