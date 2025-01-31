@@ -5,3 +5,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	document.head.appendChild(link);
 });
+/* .economica-regular {
+  font-family: "Economica", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.economica-bold {
+  font-family: "Economica", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.economica-regular-italic {
+  font-family: "Economica", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.economica-bold-italic {
+  font-family: "Economica", serif;
+  font-weight: 700;
+  font-style: italic;
+} */
