@@ -51,7 +51,7 @@ h2 {
 	flex: 1;
 	flex-direction: column;
 	justify-content: center;
-	padding: 3.125rem;	/* Équivalent à 50px */
+	padding: 3.125rem; /* Équivalent à 50px */
 }
 
 .infoContainer h1,
