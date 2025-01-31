@@ -14,10 +14,6 @@ nav {
 	width: 80%;
 }
 
-.logoNav {
-	/* margin-right: 2.5rem; Équivalent à 40px */
-}
-
 .logo {
 	width: 6.25rem; /* Équivalent à 100px */
 	height: auto;
@@ -80,18 +76,20 @@ nav ul li a.active {
 #scrollTopBtn {
 	display: none; /* Caché par défaut */
 	position: fixed;
-	bottom: 20px;
-	right: 30px;
+	bottom: 40px;
+	right: 70px;
 	z-index: 99;
 	border: none;
 	outline: none;
 	background-color: var(--couleur-orange);
+	box-shadow: 0.1875rem 0.1875rem 0.3125rem var(--couleur-secondaire-claire); /* Équivalent à 3px 3px 5px */
 	color: white;
 	cursor: pointer;
 	padding: 15px;
 	font-size: 18px;
 	width: 40px;
 	height: 40px;
+	transition: border-radius 0.15s ease;
 }
 
 #scrollTopBtn:hover {
