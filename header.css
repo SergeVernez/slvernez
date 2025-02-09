@@ -12,6 +12,8 @@ nav {
 	height: 9.0625rem; /* Équivalent à 145px */
 	padding: 0 1.25rem; /* Équivalent à 20px */
 	width: 80%;
+	font-family: "Economica", serif;
+	font-size: 18px;
 }
 
 .logo {
