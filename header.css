@@ -98,3 +98,6 @@ nav ul li a.active {
 	background-color: var(--couleur-foncee);
 	border-radius: 50%;
 }
+#scrollTopBtn {
+	font-family: "Montserrat", serif;
+}
