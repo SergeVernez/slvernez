@@ -17,13 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
 	slider.appendChild(firstClone);
 	slider.insertBefore(lastClone, slides[0]);
 
-	const allSlides = document.querySelectorAll(".slide"); // Inclut les clones
+	// Mettre à jour la liste des diapositives après le clonage
+	const allSlides = slider.querySelectorAll(".slide");
 
 	function moveToSlide(index) {
 		if (isTransitioning) return;
 		isTransitioning = true;
 
-		slider.style.transition = "transform 0.5s ease-in-out, opacity 0.5s ease-in-out";
+		slider.style.transition = "transform 0.5s ease-in-out";
 		slider.style.transform = `translateX(-${index * 100}%)`;
 
 		setTimeout(() => {
@@ -40,8 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			slider.style.transition = "none";
 			currentIndex = 1;
 			slider.style.transform = `translateX(-${currentIndex * 100}%)`;
-		}
-		if (allSlides[currentIndex].id === "last-clone") {
+		} else if (allSlides[currentIndex].id === "last-clone") {
 			slider.style.transition = "none";
 			currentIndex = allSlides.length - 2;
 			slider.style.transform = `translateX(-${currentIndex * 100}%)`;
