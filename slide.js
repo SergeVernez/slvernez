@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	let autoplay = setInterval(() => {
 		moveToSlide(currentIndex + 1);
 		currentIndex++;
-	}, 7000);
+	}, 9000);
 
 	slider.addEventListener("mouseenter", () => {
 		clearInterval(autoplay);
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		autoplay = setInterval(() => {
 			moveToSlide(currentIndex + 1);
 			currentIndex++;
-		}, 7000);
+		}, 9000);
 	});
 
 	// Initialiser la position de la première diapositive réelle
