@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	// Autoplay (optionnel)
 	let autoplay = setInterval(function () {
 		showSlide(currentIndex + 1);
-	}, 5000); // Change toutes les 5 secondes
+	}, 7000); // Change toutes les 5 secondes
 
 	// Stop l'autoplay au survol
 	const carouselContainer = document.querySelector(".carousel-container");
@@ -59,6 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	carouselContainer.addEventListener("mouseleave", function () {
 		autoplay = setInterval(function () {
 			showSlide(currentIndex + 1);
-		}, 5000);
+		}, 7000);
 	});
 });
