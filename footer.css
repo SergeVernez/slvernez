@@ -1,0 +1,86 @@
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centre le contenu verticalement */
+}
+
+.separator {
+  width: 2px;
+  background-color: aliceblue;
+  height: 300px;
+  align-self: center;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.menu-secondary a {
+  color: aliceblue;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid aliceblue;
+  margin: 5px 0;
+  width: 120px;
+  text-align: center;
+}
+
+.menu-secondary a:hover {
+  background-color: aliceblue;
+  color: #000;
+}
+
+.footer-section img {
+  margin-top: 10px;
+  width: 100px;
+}
+
+.footer-section p, .footer-section a {
+  margin: 5px 0;
+  color: aliceblue;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Répartit verticalement les éléments */
+}
+
+.follow-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Répartit verticalement les éléments */
+}
+
+.social-links {
+  display: flex;
+  justify-content: center; /* Centre les liens horizontalement */
+  gap: 10px; /* Espace entre les liens */
+}
+
+.footer-section div {
+  margin-top: 20px;
+}
