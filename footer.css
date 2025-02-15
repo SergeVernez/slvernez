@@ -11,19 +11,20 @@
 footer {
 	background-color: var(--couleur-noire);
 	color: var(--couleur-principale-body);
-	padding: 20px 0;
+	padding: 15px 0;
 }
 
-.container {
+.content {
 	display: flex;
 	justify-content: space-between;
-	align-items: start;
-	position: relative;
+	align-items: stretch; /* Assure que les sections ont la même hauteur */
+	/* position: relative; */
 }
 
-.footer-section {
-	flex: 1; /* Assure que chaque section occupe un tiers de la largeur */
-	margin: 0 10px;
+.menuSecondaire,
+.contactInfo,
+.suivezMoi {
+	margin: 0 250px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -31,23 +32,21 @@ footer {
 }
 
 .separator {
-	width: 2px;
+	width: 1px;
 	background-color: var(--couleur-principale-body);
-	height: 300px;
+	height: 350px;
 	align-self: center;
 }
 
-.footer-section ul {
+.menuSecondaire ul,
+.contactInfo ul,
+.suivezMoi ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
 }
 
-.footer-section ul li {
-	margin: 10px 0;
-}
-
-.menu-secondary a {
+.menuSecondaire a {
 	color: var(--couleur-principale-body);
 	text-decoration: none;
 	display: inline-block;
@@ -58,40 +57,48 @@ footer {
 	text-align: center;
 }
 
-.menu-secondary a:hover {
+.menuSecondaire a:hover {
 	background-color: var(--couleur-gris-claire);
 	color: var(--couleur-noire);
 }
 
-.footer-section img {
+/* footer img {
 	margin-top: 10px;
 	width: 100px;
-}
+} */
 
-.footer-section p,
-.footer-section a {
+footer p,
+footer a {
 	margin: 5px 0;
 	color: var(--couleur-principale-body);
 }
 
-.contact-info {
+.contactInfo {
+	margin-left: 150px;
+	margin-right: 150px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between; /* Répartit verticalement les éléments */
 }
 
-.follow-me {
+.suivezMoi {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between; /* Répartit verticalement les éléments */
 }
 
 .social-links {
 	display: flex;
 	justify-content: center; /* Centre les liens horizontalement */
-	gap: 10px; /* Espace entre les liens */
+	gap: 30px; /* Espace entre les liens */
+}
+.social-links a img {
+	width: 30px;
+	height: auto;
 }
 
-.footer-section div {
+footer div {
 	margin-top: 20px;
+}
+
+.titre {
+	padding-bottom: 50px;
 }
