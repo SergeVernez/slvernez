@@ -2,6 +2,7 @@ header {
 	background-color: var(--couleur-noire);
 	display: flex;
 	justify-content: center;
+	padding-top: 50px;
 }
 
 /*------------------- -------------------nav------------------- -------------------*/
