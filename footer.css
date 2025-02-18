@@ -17,8 +17,7 @@ footer {
 .content {
 	display: flex;
 	justify-content: space-between;
-	align-items: stretch; /* Assure que les sections ont la même hauteur */
-	/* position: relative; */
+	align-items: stretch;
 }
 
 .menuSecondaire,
@@ -28,7 +27,7 @@ footer {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: center; /* Centre le contenu verticalement */
+	align-items: center;
 }
 
 .separator {
@@ -36,6 +35,7 @@ footer {
 	background-color: var(--couleur-principale-body);
 	height: 350px;
 	align-self: center;
+	margin-bottom: 50px;
 }
 
 .menuSecondaire ul,
@@ -62,11 +62,6 @@ footer {
 	color: var(--couleur-noire);
 }
 
-/* footer img {
-	margin-top: 10px;
-	width: 100px;
-} */
-
 footer p,
 footer a {
 	margin: 5px 0;
@@ -78,17 +73,27 @@ footer a {
 	margin-right: 150px;
 	display: flex;
 	flex-direction: column;
+	text-align: center;
+	align-items: center;
+}
+.contactInfo p,
+a {
+	margin-bottom: 60px;
+	text-decoration: none;
 }
 
 .suivezMoi {
 	display: flex;
 	flex-direction: column;
+	text-align: center;
+	align-items: center;
 }
 
 .social-links {
 	display: flex;
-	justify-content: center; /* Centre les liens horizontalement */
-	gap: 30px; /* Espace entre les liens */
+	justify-content: center;
+	gap: 30px;
+	margin-bottom: 90px;
 }
 .social-links a img {
 	width: 30px;
@@ -100,5 +105,9 @@ footer div {
 }
 
 .titre {
+	width: 170px;
 	padding-bottom: 50px;
+	margin-top: 0;
+	margin-bottom: 25px;
+	text-align: center;
 }
