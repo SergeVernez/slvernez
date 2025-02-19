@@ -3,49 +3,67 @@ body {
 	color: var(--couleur-noire);
 }
 
-.contact-section {
+.contactSection {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 10rem; /* Équivalent à 160px */
 }
 
-.contact-text,
-.contact-form {
+.contactText,
+.contactForm {
 	width: 48%;
 	padding: 6.25rem; /* Équivalent à 100px */
 }
-.contact-form {
+
+.contactForm {
 	background-color: var(--couleur-noire);
 }
 
-/* Spécifier les espacements pour h2, p et cta dans la page de contact */
-.contact-text h2 {
-	margin-bottom: 2rem; /* Ajuster l'espacement selon tes besoins */
+/* Aligner et espacer les éléments dans .contactText */
+.contactText {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 2rem; /* Ajoute un espacement de 2rem entre les éléments */
 }
 
-.contact-text p {
-	margin-bottom: 1.5rem; /* Ajuster l'espacement selon tes besoins */
+/* Garder le style de .cta */
+.cta {
+	background-color: var(--couleur-orange);
+	color: var(--couleur-principale-body);
+	width: 18.75rem; /* Équivalent à 300px */
+	height: 2.8125rem; /* Équivalent à 45px */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Economica", serif;
+	font-size: 1.875rem; /* Équivalent à 30px */
+	font-weight: 700;
+	text-decoration: none;
+	box-shadow: 0.1875rem 0.1875rem 0.3125rem var(--couleur-secondaire-claire); /* Équivalent à 3px 3px 5px */
+	text-align: center;
+	transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.contact-text .cta {
-	margin-top: 1.5rem; /* Ajuster l'espacement selon tes besoins */
+.cta:hover {
+	transform: translateY(-0.3125rem);
 }
 
-.contact-form form {
+.contactForm form {
 	display: flex;
 	flex-direction: column;
 }
 
-.form-group {
+.formGroup {
 	display: flex;
 	flex-direction: row;
 	gap: 1.25rem; /* Équivalent à 20px */
 	margin-bottom: 1.25rem; /* Équivalent à 20px */
 }
 
-.form-group input,
-.form-group textarea {
+.formGroup input,
+.formGroup textarea {
 	width: 100%;
 	padding: 0.625rem; /* Équivalent à 10px */
 	border: 1px solid var(--couleur-secondaire-claire);
@@ -79,18 +97,18 @@ button:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
-	.contact-section {
+	.contactSection {
 		flex-direction: column;
 		padding: 1.25rem; /* Équivalent à 20px */
 	}
 
-	.contact-text,
-	.contact-form {
+	.contactText,
+	.contactForm {
 		width: 100%;
 		padding: 1.25rem 0; /* Équivalent à 20px 0 */
 	}
 
-	.form-group {
+	.formGroup {
 		flex-direction: column;
 	}
 }
