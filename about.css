@@ -33,15 +33,24 @@ body {
 .about-text {
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
+	justify-content: space-between;
 	gap: 1.5rem; /* Ajoute un espacement de 1.5rem entre les éléments */
+	height: 100%;
+}
+
+.about-text h2 {
+	margin-bottom: 1.5rem;
+}
+
+.about-text p {
+	margin-bottom: 1.5rem;
 }
 
 /* Garder le style de .cta-container */
 .cta-container {
 	display: flex;
 	gap: 1rem;
-	align-items: flex-end;
+	align-self: flex-end; /* Aligner les CTA en bas de la div */
 }
 
 /* Garder le style de .cta */
@@ -81,6 +90,7 @@ body {
 
 	.cta-container {
 		flex-direction: column;
+		align-self: center; /* Aligner les CTA au centre pour les petits écrans */
 	}
 
 	.cta {
