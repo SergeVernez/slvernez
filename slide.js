@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	let currentIndex = 1;
 	let isTransitioning = false;
 
-	// Cloner les premières et dernières diapositives
+	// Cloner les premières et dernières diapo
 	const firstClone = slides[0].cloneNode(true);
 	const lastClone = slides[slides.length - 1].cloneNode(true);
 
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		}, 9000);
 	});
 
-	// Initialiser la position de la première diapositive réelle
+	// Initialiser la position de la première diapo réelle
 	slider.style.transform = `translateX(-100%)`;
 	allSlides[currentIndex].classList.add("active");
 });

@@ -94,7 +94,7 @@ button:hover {
 	background-color: var(--couleur-foncee);
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
 	.contact-section {
 		flex-direction: column;

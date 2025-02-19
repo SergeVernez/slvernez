@@ -51,7 +51,6 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	color: var(--couleur-gris-claire);
-	/* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); */
 	padding: 60px;
 	background: rgba(0, 0, 0, 0.795);
 	display: flex;

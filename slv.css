@@ -5,7 +5,7 @@
 }
 
 :root {
-	font-size: 16px; /* Définit la taille de base à 16px */
+	font-size: 16px; 
 	--couleur-principale-body: #faf7f0;
 	--couleur-secondaire-claire: #d8d2c2;
 	--couleur-orange: #b17457;

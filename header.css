@@ -73,11 +73,11 @@ nav ul li a:hover {
 
 /*------ page active ------*/
 nav ul li a.active {
-	color: var(--couleur-orange); /* Couleur pour le lien actif */
+	color: var(--couleur-orange); 
 }
 /*------ Scroll top  ------*/
 #scrollTopBtn {
-	display: none; /* Caché par défaut */
+	display: none; 
 	position: fixed;
 	bottom: 40px;
 	right: 70px;

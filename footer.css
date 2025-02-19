@@ -128,11 +128,11 @@ footer div {
 		margin: 10px 0;
 	}
 	.separator {
-		display: none; /* Cache les séparateurs sur les petits écrans */
+		display: none;
 	}
 	.social-links {
 		flex-direction: column;
-		margin-bottom: 30px; /* Ajuste la marge du bas */
+		margin-bottom: 30px; 
 	}
 	.social-links a img {
 		width: 25px;
@@ -148,7 +148,7 @@ footer div {
 		margin: 20px 40px;
 	}
 	.separator {
-		height: 200px; /* Ajuste la hauteur des séparateurs pour les tablettes */
+		height: 200px; 
 	}
 }
 
@@ -160,6 +160,6 @@ footer div {
 		margin: 20px 100px;
 	}
 	.separator {
-		height: 300px; /* Ajuste la hauteur des séparateurs pour les grands écrans */
+		height: 300px; 
 	}
 }
