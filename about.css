@@ -3,54 +3,45 @@ body {
 	color: var(--couleur-noire);
 }
 
-.about-section {
+.aboutSection {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start; /* Aligner le début des éléments */
 	padding: 10rem; /* Équivalent à 160px */
 }
 
-.about-image,
-.about-text {
+.aboutImage {
 	width: 48%;
 	height: auto;
 	padding: 6.25rem; /* Équivalent à 100px */
-}
-
-.about-image {
 	background-color: var(--couleur-secondaire-claire);
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end; /* Aligner les éléments vers le bas */
+	align-items: center;
 }
 
-.about-image img {
-	width: 100%;
+.aboutImage img {
+	width: 90%;
 	height: auto;
 }
 
-/* Aligner et espacer les éléments dans .about-text */
-.about-text {
+/* Fusionner les styles de .aboutText */
+.aboutText {
+	width: 48%;
+	height: auto;
+	padding: 6.25rem; /* Équivalent à 100px */
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	gap: 1.5rem; /* Ajoute un espacement de 1.5rem entre les éléments */
-	height: 100%;
+	justify-content: space-between; /* Ajoute un espacement entre les éléments */
+	gap: 2rem; /* Espacement harmonieux entre les éléments */
 }
 
-.about-text h2 {
-	margin-bottom: 1.5rem;
-}
-
-.about-text p {
-	margin-bottom: 1.5rem;
-}
-
-/* Garder le style de .cta-container */
-.cta-container {
+/* Garder le style de .ctaContainer */
+.ctaContainer {
 	display: flex;
-	gap: 1rem;
-	align-self: flex-end; /* Aligner les CTA en bas de la div */
+	gap: 1.5rem; /* Espacement entre les CTA */
+	align-items: flex-end;
 }
 
 /* Garder le style de .cta */
@@ -77,20 +68,20 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
-	.about-section {
+	.aboutSection {
 		flex-direction: column;
 		padding: 1.25rem; /* Équivalent à 20px */
 	}
 
-	.about-image,
-	.about-text {
+	.aboutImage,
+	.aboutText {
 		width: 100%;
 		padding: 1.25rem 0; /* Équivalent à 20px 0 */
 	}
 
-	.cta-container {
+	.ctaContainer {
 		flex-direction: column;
-		align-self: center; /* Aligner les CTA au centre pour les petits écrans */
+		align-self: center; /* Centrer les CTA pour les petits écrans */
 	}
 
 	.cta {
