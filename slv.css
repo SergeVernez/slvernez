@@ -101,3 +101,51 @@ p {
 	max-width: 25rem; /* Équivalent à 400px */
 	height: auto;
 }
+
+/* Media Query pour les écrans de taille intermédiaire (tablettes en paysage) */
+@media (max-width: 1024px) {
+	.container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.infoContainer {
+		width: 100%;
+		padding: 2.5rem; /* Équivalent à 40px */
+	}
+
+	.imgContainer {
+		width: 100%;
+		padding: 8rem; /* Ajuste cette valeur selon tes besoins */
+	}
+
+	.cta {
+		width: 100%;
+		font-size: 1.75rem; /* Équivalent à 28px */
+		height: 2.625rem; /* Équivalent à 42px */
+	}
+}
+
+/* Media Query pour les petits écrans (tablettes en portrait et mobile) */
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.infoContainer {
+		width: 100%;
+		padding: 1.25rem; /* Équivalent à 20px */
+	}
+
+	.imgContainer {
+		width: 100%;
+		padding: 5rem; /* Ajuste cette valeur selon tes besoins */
+	}
+
+	.cta {
+		width: 100%;
+		font-size: 1.5rem; /* Équivalent à 24px */
+		height: 2.5rem; /* Équivalent à 40px */
+	}
+}
