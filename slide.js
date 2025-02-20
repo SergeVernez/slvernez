@@ -4,10 +4,15 @@ document.addEventListener("DOMContentLoaded", function () {
 	const prevBtn = document.querySelector(".slider-btn.prev");
 	const nextBtn = document.querySelector(".slider-btn.next");
 
+	if (slides.length === 0 || !slider || !prevBtn || !nextBtn) {
+		console.error("Des éléments nécessaires sont manquants dans le DOM.");
+		return;
+	}
+
 	let currentIndex = 1;
 	let isTransitioning = false;
 
-	// Cloner les premières et dernières diapo
+	// Cloner les premières et dernières diapos
 	const firstClone = slides[0].cloneNode(true);
 	const lastClone = slides[slides.length - 1].cloneNode(true);
 
