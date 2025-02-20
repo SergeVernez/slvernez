@@ -15,6 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
 				}
 			});
 
+			// Fonctionnalité du menu burger
+			const menuIcon = document.getElementById("menu-icon");
+			const navLinksContainer = document.getElementById("nav-links");
+
+			if (menuIcon && navLinksContainer) {
+				menuIcon.addEventListener("click", function () {
+					navLinksContainer.classList.toggle("show");
+				});
+			}
+
 			// ajout scroll top
 			function scrollFunction() {
 				const scrollTopBtn = document.getElementById("scrollTopBtn");
@@ -31,12 +41,15 @@ document.addEventListener("DOMContentLoaded", function () {
 			};
 
 			// Ajout du gestionnaire de clic pour le bouton scroll top
-			document.getElementById("scrollTopBtn").addEventListener("click", function () {
-				window.scrollTo({
-					top: 0,
-					behavior: "smooth",
+			const scrollTopBtn = document.getElementById("scrollTopBtn");
+			if (scrollTopBtn) {
+				scrollTopBtn.addEventListener("click", function () {
+					window.scrollTo({
+						top: 0,
+						behavior: "smooth",
+					});
 				});
-			});
+			}
 		})
 		.catch((error) => {
 			console.error("Erreur du chargement header: ", error);

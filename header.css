@@ -5,7 +5,7 @@ header {
 	padding-top: 50px;
 }
 
-/*------------------- -------------------nav------------------- -------------------*/
+/*-------------------nav-------------------*/
 nav {
 	display: flex;
 	align-items: center;
@@ -21,6 +21,13 @@ nav {
 	width: 6.25rem; /* Équivalent à 100px */
 	height: auto;
 	margin-left: 1.25rem;
+}
+
+.menu-icon {
+	display: none;
+	font-size: 2rem;
+	cursor: pointer;
+	color: var(--couleur-principale-body);
 }
 
 nav ul {
@@ -73,11 +80,12 @@ nav ul li a:hover {
 
 /*------ page active ------*/
 nav ul li a.active {
-	color: var(--couleur-orange); 
+	color: var(--couleur-orange);
 }
-/*------ Scroll top  ------*/
+
+/*------ Scroll top ------*/
 #scrollTopBtn {
-	display: none; 
+	display: none;
 	position: fixed;
 	bottom: 40px;
 	right: 70px;
@@ -98,4 +106,56 @@ nav ul li a.active {
 #scrollTopBtn:hover {
 	background-color: var(--couleur-foncee);
 	border-radius: 50%;
+}
+
+/* Media Query pour les écrans de taille intermédiaire (tablettes en paysage) */
+@media (max-width: 1024px) {
+	nav {
+		flex-direction: column;
+		height: auto;
+		padding: 20px;
+	}
+
+	nav ul {
+		flex-direction: column;
+		gap: 10px;
+		margin-top: 20px;
+	}
+
+	.social-icons {
+		margin-top: 10px;
+	}
+}
+
+/* Media Query pour les petits écrans (tablettes en portrait et mobile) */
+@media (max-width: 768px) {
+	nav {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.menu-icon {
+		display: block;
+	}
+
+	nav ul {
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+		margin-top: 15px;
+		display: none;
+	}
+
+	nav ul.show {
+		display: flex;
+	}
+
+	.social-icons {
+		margin-top: 10px;
+	}
+
+	.logo {
+		margin-left: 0;
+		margin-bottom: 15px;
+	}
 }
