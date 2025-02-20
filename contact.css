@@ -20,34 +20,11 @@ body {
 	background-color: var(--couleur-noire);
 }
 
-/* Aligner et espacer les éléments dans .contactText */
 .contactText {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	gap: 2rem; /* Ajoute un espacement de 2rem entre les éléments */
-}
-
-/* Garder le style de .cta */
-.cta {
-	background-color: var(--couleur-orange);
-	color: var(--couleur-principale-body);
-	width: 18.75rem; /* Équivalent à 300px */
-	height: 2.8125rem; /* Équivalent à 45px */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: "Economica", serif;
-	font-size: 1.875rem; /* Équivalent à 30px */
-	font-weight: 700;
-	text-decoration: none;
-	box-shadow: 0.1875rem 0.1875rem 0.3125rem var(--couleur-secondaire-claire); /* Équivalent à 3px 3px 5px */
-	text-align: center;
-	transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.cta:hover {
-	transform: translateY(-0.3125rem);
 }
 
 .contactForm form {
@@ -71,14 +48,13 @@ body {
 }
 
 textarea {
-	resize: vertical;
 	height: 15.625rem; /* Équivalent à 250px */
 }
 
 button {
 	display: flex;
-	justify-content: center; /* Centre le texte horizontalement */
-	align-items: center; /* Centre le texte verticalement */
+	justify-content: center;
+	align-items: center;
 	font-family: "Economica", serif;
 	font-size: 1.5rem; /* Équivalent à 24px */
 	font-weight: 600;
@@ -90,7 +66,10 @@ button {
 	cursor: pointer;
 	transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
-
+.submit {
+	display: flex;
+	justify-content: center;
+}
 button:hover {
 	transform: translateY(-0.3125rem); /* Équivalent à -5px */
 }

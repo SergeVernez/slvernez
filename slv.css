@@ -5,7 +5,7 @@
 }
 
 :root {
-	font-size: 16px; 
+	font-size: 16px;
 	--couleur-principale-body: #faf7f0;
 	--couleur-secondaire-claire: #d8d2c2;
 	--couleur-orange: #b17457;
@@ -21,15 +21,13 @@ body {
 }
 
 main {
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
-
-main {
-	display: flex;
-	flex-direction: column;
+	margin: 6.25rem 0;
 }
 
 h1,
@@ -78,7 +76,7 @@ p {
 	align-items: center;
 	font-family: "Economica", serif;
 	font-size: 1.875rem; /* Équivalent à 30px */
-	font-weight: 700;
+	font-weight: 400;
 	text-decoration: none;
 	box-shadow: 0.1875rem 0.1875rem 0.3125rem var(--couleur-secondaire-claire); /* Équivalent à 3px 3px 5px */
 	text-align: center;
