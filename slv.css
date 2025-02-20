@@ -24,7 +24,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin: 6.25rem 0;
@@ -39,6 +38,7 @@ h2 {
 
 .container {
 	display: flex;
+	flex-wrap: wrap; /* Permettre aux éléments de s'ajuster en fonction de l'espace disponible */
 	max-width: 80%;
 	justify-content: space-between;
 	align-items: stretch;
@@ -69,7 +69,8 @@ p {
 .cta {
 	background-color: var(--couleur-orange);
 	color: var(--couleur-principale-body);
-	width: 18.75rem; /* Équivalent à 300px */
+	width: 100%; /* Adapte la largeur aux conteneurs parents */
+	max-width: 18.75rem; /* Équivalent à 300px */
 	height: 2.8125rem; /* Équivalent à 45px */
 	display: flex;
 	justify-content: center;

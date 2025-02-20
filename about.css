@@ -13,7 +13,7 @@ body {
 .aboutImage {
 	width: 48%;
 	height: auto;
-	padding: 6.25rem; /* Équivalent à 100px */
+	padding: 6rem; /* Équivalent à 100px */
 	background-color: var(--couleur-secondaire-claire);
 	display: flex;
 	flex-direction: column;
@@ -31,7 +31,7 @@ body {
 	width: 48%;
 	height: auto;
 	padding: 6.25rem; /* Équivalent à 100px */
-	gap: 2rem;
+	gap: 8rem;
 }
 
 /* CTA cote à cote */

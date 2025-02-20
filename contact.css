@@ -7,7 +7,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 10rem; /* Équivalent à 160px */
+	padding: 8rem; /* Équivalent à 160px */
 }
 
 .contactText,
@@ -24,7 +24,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	gap: 2rem; /* Ajoute un espacement de 2rem entre les éléments */
+	gap: 8rem; /* Ajoute un espacement de 8rem entre les éléments */
 }
 
 .contactForm form {
