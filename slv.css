@@ -120,6 +120,12 @@ p {
 		padding: 8rem; /* Ajuste cette valeur selon tes besoins */
 	}
 
+	.ctaContainer {
+		flex-direction: column;
+		align-self: center; /* Centrer les CTA pour les écrans de taille intermédiaire */
+		gap: 0.5rem; /* Espacement encore réduit pour les CTA */
+	}
+
 	.cta {
 		width: 100%;
 		font-size: 1.75rem; /* Équivalent à 28px */
@@ -142,6 +148,12 @@ p {
 	.imgContainer {
 		width: 100%;
 		padding: 5rem; /* Ajuste cette valeur selon tes besoins */
+	}
+
+	.ctaContainer {
+		flex-direction: column;
+		align-self: center; /* Centrer les CTA pour les petits écrans */
+		gap: 0.5rem; /* Espacement encore réduit pour les CTA sur mobiles */
 	}
 
 	.cta {

@@ -10,57 +10,122 @@ body {
 	padding: 10rem; /* Équivalent à 160px */
 }
 
-.aboutImage {
-	width: 48%;
-	height: auto;
-	padding: 6rem; /* Équivalent à 100px */
+.aboutImageContainer {
+	width: 50%;
 	background-color: var(--couleur-secondaire-claire);
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
 	align-items: center;
+	padding: 6rem; /* Équivalent à 100px */
 }
 
-.aboutImage img {
-	width: 90%;
+.aboutImage {
+	width: 80%; /* Ajuster pour une image plus petite */
 	height: auto;
+}
+
+.aboutContentContainer {
+	width: 50%;
+	padding: 0 100px;
+	display: flex;
+	flex-direction: column;
+}
+
+h2 {
+	font-size: 2rem; /* Taille adaptée aux mobiles */
+	margin-bottom: 50px; /* Réduire l'espacement pour mobile */
+}
+
+p {
+	margin-bottom: 20px; /* Réduire l'espacement pour mobile */
 }
 
 .aboutText {
 	display: flex;
 	flex-direction: column;
-	width: 48%;
-	height: auto;
-	padding: 6.25rem; /* Équivalent à 100px */
-	gap: 8rem;
+	gap: 2rem;
 }
 
-/* CTA cote à cote */
+/* CTA côte à côte */
 .ctaContainer {
 	display: flex;
-	gap: 1.5rem;
+	gap: 1rem; /* Espacement réduit pour les CTA */
 	align-items: flex-end;
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+	.aboutSection {
+		flex-direction: column;
+		padding: 2.5rem; /* Équivalent à 40px */
+	}
+
+	.aboutImageContainer,
+	.aboutContentContainer {
+		width: 100%;
+		padding: 2.5rem; /* Équivalent à 40px */
+	}
+
+	h2 {
+		font-size: 1.75rem; /* Taille adaptée aux écrans intermédiaires */
+		margin-bottom: 30px; /* Réduire l'espacement */
+	}
+
+	p {
+		font-size: 1.25rem; /* Taille adaptée aux écrans intermédiaires */
+		margin-bottom: 15px; /* Réduire l'espacement */
+	}
+
+	.ctaContainer {
+		flex-direction: column;
+		align-self: center; /* Centrer les CTA pour les écrans de taille intermédiaire */
+	}
+
+	.cta {
+		width: 100%;
+		text-align: center;
+		font-size: 1.75rem; /* Équivalent à 28px */
+		height: 2.625rem; /* Équivalent à 42px */
+		margin-top: 10px; /* Réduire l'espacement */
+		padding: 1.75rem; /* Équivalent à 28px */
+	}
+}
+
 @media (max-width: 768px) {
 	.aboutSection {
 		flex-direction: column;
 		padding: 1.25rem; /* Équivalent à 20px */
 	}
 
-	.aboutImage,
-	.aboutText {
+	.aboutImageContainer,
+	.aboutContentContainer {
 		width: 100%;
-		padding: 1.25rem 0; /* Équivalent à 20px 0 */
+		padding: 1.25rem; /* Équivalent à 20px */
+	}
+
+	h2 {
+		font-size: 1.5rem; /* Taille adaptée aux mobiles */
+	}
+
+	p {
+		font-size: 1rem; /* Taille adaptée aux mobiles */
+		margin-bottom: 10px; /* Réduire l'espacement pour mobile */
 	}
 
 	.ctaContainer {
 		flex-direction: column;
 		align-self: center; /* Centrer les CTA pour les petits écrans */
 	}
+	a {
+		margin: 0;
+		padding: 0;
+	}
 
 	.cta {
+		margin-top: 20px;
 		width: 100%;
 		text-align: center;
+		font-size: 1.5rem; /* Équivalent à 24px */
+		padding: 1.5rem;
 	}
 }
