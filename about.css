@@ -34,7 +34,7 @@ body {
 	gap: 2rem;
 }
 
-/* Garder le style de .ctaContainer */
+/* CTA cote à cote */
 .ctaContainer {
 	display: flex;
 	gap: 1.5rem;
