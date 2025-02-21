@@ -104,6 +104,9 @@ p {
 		padding: 10px; /* Réduit le padding à 10px */
 		margin: 0 auto;
 	}
+	.aboutImageContainer {
+		height: 20.31rem;
+	}
 
 	h2 {
 		font-size: 1.5rem; /* Taille adaptée aux mobiles */
