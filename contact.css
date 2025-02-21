@@ -1,93 +1,126 @@
 body {
-	background-color: var(--couleur-principale-body);
-	color: var(--couleur-noire);
+    background-color: var(--couleur-principale-body);
+    color: var(--couleur-noire);
 }
 
 .contactSection {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 8rem; /* Équivalent à 160px */
-}
-
-.contactText,
-.contactForm {
-	width: 48%;
-	padding: 6.25rem; /* Équivalent à 100px */
-}
-
-.contactForm {
-	background-color: var(--couleur-noire);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10rem; /* Équivalent à 160px */
 }
 
 .contactText {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	gap: 8rem; /* Ajoute un espacement de 8rem entre les éléments */
+    width: 50%;
+    padding: 6rem; /* Équivalent à 100px */
+    background-color: var(--couleur-secondaire-claire);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8rem; /* Ajoute un espacement de 8rem entre les éléments */
+}
+
+.contactFormContainer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--couleur-noire);
+    padding: 6rem; /* Équivalent à 100px */
+}
+
+.contactForm {
+    width: 100%;
 }
 
 .contactForm form {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .formGroup {
-	display: flex;
-	flex-direction: row;
-	gap: 1.25rem; /* Équivalent à 20px */
-	margin-bottom: 1.25rem; /* Équivalent à 20px */
+    display: flex;
+    flex-direction: row;
+    gap: 1.25rem; /* Équivalent à 20px */
+    margin-bottom: 1.25rem; /* Équivalent à 20px */
 }
 
 .formGroup input,
 .formGroup textarea {
-	width: 100%;
-	padding: 0.625rem; /* Équivalent à 10px */
-	border: 1px solid var(--couleur-secondaire-claire);
-	font-size: 1rem; /* Équivalent à 16px */
+    width: 100%;
+    padding: 0.625rem; /* Équivalent à 10px */
+    background-color: white; /* Inputs en blanc */
+    border: 1px solid var(--couleur-secondaire-claire);
+    font-size: 1rem; /* Équivalent à 16px */
 }
 
 textarea {
-	height: 15.625rem; /* Équivalent à 250px */
+    height: 15.625rem; /* Équivalent à 250px */
 }
 
 button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-family: "Economica", serif;
-	font-size: 1.5rem; /* Équivalent à 24px */
-	font-weight: 600;
-	padding: 0.625rem; /* Équivalent à 10px */
-	width: 9.375rem; /* Équivalent à 150px */
-	background-color: var(--couleur-orange);
-	color: var(--couleur-principale-body);
-	border: none;
-	cursor: pointer;
-	transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Economica", serif;
+    font-size: 1.5rem; /* Équivalent à 24px */
+    font-weight: 600;
+    padding: 0.625rem; /* Équivalent à 10px */
+    width: 9.375rem; /* Équivalent à 150px */
+    background-color: var(--couleur-orange);
+    color: var(--couleur-principale-body);
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .submit {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 button:hover {
-	transform: translateY(-0.3125rem); /* Équivalent à -5px */
+    transform: translateY(-0.3125rem); /* Équivalent à -5px */
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-	.contactSection {
-		flex-direction: column;
-		padding: 1.25rem; /* Équivalent à 20px */
-	}
+    .contactSection {
+        flex-direction: column;
+        padding: 1.25rem; /* Équivalent à 20px */
+    }
 
-	.contactText,
-	.contactForm {
-		width: 100%;
-		padding: 1.25rem 0; /* Équivalent à 20px 0 */
-	}
+    .contactText,
+    .contactFormContainer {
+        width: 100%;
+        padding: 1.25rem; /* Équivalent à 20px */
+        margin: 0 auto;
+    }
 
-	.formGroup {
-		flex-direction: column;
-	}
+    .contactText {
+        padding: 1.25rem; /* Équivalent à 20px */
+    }
+
+    .contactFormContainer {
+        padding: 1.25rem; /* Équivalent à 20px */
+    }
+
+    .formGroup {
+        flex-direction: column;
+    }
+
+    .ctaContainer {
+        flex-direction: column;
+        align-self: center; /* Centrer les CTA pour les petits écrans */
+    }
+    a {
+        margin: 0;
+        padding: 0;
+    }
+
+    .cta {
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem; /* Équivalent à 24px */
+        padding: 1.5rem;
+    }
 }
