@@ -129,7 +129,6 @@ body {
 		margin-bottom: 2px;
 	}
 	.slider-btn {
-		font-size: 1.2rem;
-		top: 60%;
+		display: none;
 	}
 }
