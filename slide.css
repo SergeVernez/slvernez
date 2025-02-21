@@ -110,32 +110,12 @@ body {
 	}
 }
 
-/* Media Query pour les petits écrans (tablettes en portrait et mobile) */
-@media (max-width: 768px) {
-	.caption {
-		padding: 20px;
-		top: 87%;
-	}
-	.caption h2 {
-		font-size: 1.25rem;
-	}
-	.caption p {
-		font-size: 0.875rem;
-	}
-	.slider-btn {
-		font-size: 1.5rem;
-		top: 60%;
-	}
-	.prev {
-		left: 5px;
-	}
-	.next {
-		right: 5px;
-	}
-}
-
 /* Media Query pour les très petits écrans (mobiles) */
 @media (max-width: 480px) {
+	.slider-container {
+		display: none; /* Masquer le slider */
+	}
+
 	.caption {
 		padding: 2px;
 		top: 85%;
