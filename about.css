@@ -64,6 +64,7 @@ p {
 	.aboutContentContainer {
 		width: 100%;
 		padding: 2.5rem; /* Équivalent à 40px */
+		margin: 0 auto;
 	}
 
 	h2 {
@@ -94,13 +95,14 @@ p {
 @media (max-width: 768px) {
 	.aboutSection {
 		flex-direction: column;
-		padding: 1.25rem; /* Équivalent à 20px */
+		padding: 2.5rem; /* Équivalent à 20px */
 	}
 
 	.aboutImageContainer,
 	.aboutContentContainer {
 		width: 100%;
-		padding: 1.25rem; /* Équivalent à 20px */
+		padding: 10px; /* Réduit le padding à 10px */
+		margin: 0 auto;
 	}
 
 	h2 {
