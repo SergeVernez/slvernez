@@ -1,0 +1,43 @@
+/* 1rem = 16px */
+* :root {
+	font-size: 16px;
+	--couleur-principale-body: #faf7f0;
+	--couleur-secondaire-claire: #d8d2c2;
+	--couleur-orange: #b17457;
+	--couleur-foncee: #4a4947;
+	--couleur-noire: #131313;
+	--couleur-gris-claire: #e3e3e3;
+	--couleur-gris-foncee: #f7f7f7;
+}
+body {
+	background-color: var(--couleur-principale-body);
+	color: var(--couleur-noire);
+}
+.container {
+	display: flex;
+	flex-direction: column; /* Aligne les divs verticalement */
+	max-width: 80%;
+	justify-content: space-between;
+	align-items: stretch;
+}
+.infoContainer {
+	padding: 7rem 25rem;
+}
+
+h3 {
+	margin-top: 3rem;
+	color: var(--couleur-foncee);
+	font-weight: 600;
+}
+
+.ctaContainer {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 2rem;
+	padding: 0 25rem;
+}
+
+.ctaContainer .cta {
+	margin: 0.5rem;
+}
