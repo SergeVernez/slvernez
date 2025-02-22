@@ -1,3 +1,4 @@
+/* 1rem = 16px  */
 body {
 	background-color: var(--couleur-principale-body);
 	color: var(--couleur-noire);
@@ -7,16 +8,16 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	padding: 7rem 10rem; /* Équivalent à 160px */
+	padding: 7rem 15rem; 
 }
 
 .contactText {
 	width: 45%;
-	padding: 0 6rem; /* Équivalent à 100px */
+	padding-right: 6rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	gap: 9.4rem; /* Ajoute un espacement de 8rem entre les éléments */
+	gap: 9.4rem; 
 }
 
 .contactFormContainer {
@@ -25,7 +26,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: var(--couleur-noire);
-	padding: 6rem; /* Équivalent à 100px */
+	padding: 6rem; 
 }
 
 .contactForm {
@@ -40,22 +41,22 @@ body {
 .formGroup {
 	display: flex;
 	flex-direction: row;
-	gap: 1.25rem; /* Équivalent à 20px */
-	margin-bottom: 1.25rem; /* Équivalent à 20px */
+	gap: 1.25rem; 
+	margin-bottom: 1.25rem; 
 }
 
 .formGroup input,
 .formGroup textarea {
 	width: 100%;
-	padding: 0.625rem; /* Équivalent à 10px */
-	background-color: var(--couleur-principale-body); /* Inputs en blanc */
+	padding: 0.625rem; 
+	background-color: var(--couleur-principale-body);
 	border: 1px solid var(--couleur-secondaire-claire);
-	font-size: 1rem; /* Équivalent à 16px */
+	font-size: 1rem;
 }
 
 textarea {
 	resize: none;
-	height: 15.625rem; /* Équivalent à 250px */
+	height: 15.625rem; 
 	overflow: auto; /* Active le défilement automatique */
 	font-family: "Montserrat", sans-serif;
 }
@@ -65,10 +66,10 @@ button {
 	justify-content: center;
 	align-items: center;
 	font-family: "Economica", serif;
-	font-size: 1.5rem; /* Équivalent à 24px */
+	font-size: 1.5rem; 
 	font-weight: 600;
-	padding: 0.625rem; /* Équivalent à 10px */
-	width: 9.375rem; /* Équivalent à 150px */
+	padding: 0.625rem; 
+	width: 9.375rem; 
 	background-color: var(--couleur-orange);
 	color: var(--couleur-principale-body);
 	border: none;
@@ -80,28 +81,27 @@ button {
 	justify-content: center;
 }
 button:hover {
-	transform: translateY(-0.3125rem); /* Équivalent à -5px */
+	transform: translateY(-0.3125rem);
 }
 
 /* Responsive */
 @media (max-width: 768px) {
 	.contactSection {
 		flex-direction: column;
-		padding: 0 2.5rem; /* 2.5rem est l'équivalent de 40px */
+		padding: 0 2.5rem; 
 	}
 
 	.contactFormContainer {
 		width: 100%;
-		padding: 2rem; /* Équivalent à 32px */
-		margin-bottom: 5rem; /* Équivalent à 80px en bas */
+		padding: 2rem; 
+		margin-bottom: 5rem; 
 	}
 
 	.contactText {
 		width: 100%;
-		padding: 0 0.5rem; /* Ajoute un blanc tournant de 0.5rem sur les côtés */
-		margin: 0 0 5rem 0; /* Équivalent à 80px en bas */
-
-		gap: 1rem; /* Ajoute un espacement de 1rem entre les éléments */
+		padding: 0 0.5rem; 
+		margin: 0 0 5rem 0; 
+		gap: 1rem; 
 	}
 
 	.contactText h2 {
@@ -117,10 +117,10 @@ button:hover {
 	}
 
 	.ctaContainer {
-		margin-top: 1rem; /* Ajuste la marge supérieure de la CTA */
+		margin-top: 1rem;
 		flex-direction: column;
 		align-self: center; /* Centrer les CTA pour les petits écrans */
-		justify-content: center; /* Centre le CTA horizontalement */
+		justify-content: center;
 	}
 
 	a {
@@ -131,8 +131,8 @@ button:hover {
 		margin-top: 20px;
 		width: 100%;
 		text-align: center;
-		font-size: 1.5rem; /* Équivalent à 24px */
+		font-size: 1.5rem; 
 		padding: 1.5rem;
-		width: 12.5rem; /* Équivalent à 200px */
+		width: 12.5rem; 
 	}
 }

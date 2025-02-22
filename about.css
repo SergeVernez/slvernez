@@ -1,3 +1,4 @@
+/* 1rem = 16px  */
 body {
 	background-color: var(--couleur-principale-body);
 	color: var(--couleur-noire);
@@ -7,7 +8,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	padding: 10rem; /* Équivalent à 160px */
+	padding: 15rem;
 }
 
 .aboutImageContainer {
@@ -16,7 +17,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 6rem; /* Équivalent à 100px */
+	padding: 6rem;
 }
 
 .aboutImage {
@@ -41,7 +42,7 @@ body {
 /* CTA côte à côte */
 .ctaContainer {
 	display: flex;
-	gap: 1rem; /* Espacement réduit pour les CTA */
+	gap: 1rem;
 	align-items: flex-end;
 }
 
@@ -49,75 +50,75 @@ body {
 @media (max-width: 1024px) {
 	.aboutSection {
 		flex-direction: column;
-		padding: 2.5rem; /* Équivalent à 40px */
+		padding: 2.5rem;
 	}
 
 	.aboutImageContainer,
 	.aboutContentContainer {
 		width: 100%;
-		padding: 2.5rem; /* Équivalent à 40px */
+		padding: 2.5rem;
 		margin: 0 auto;
 	}
 
 	h2 {
-		font-size: 1.75rem; /* Taille adaptée aux écrans intermédiaires */
-		margin-bottom: 30px; /* Réduire l'espacement */
+		font-size: 1.75rem;
+		margin-bottom: 30px;
 	}
 
 	p {
-		font-size: 1.25rem; /* Taille adaptée aux écrans intermédiaires */
-		margin-bottom: 15px; /* Réduire l'espacement */
+		font-size: 1.25rem;
+		margin-bottom: 15px;
 	}
 
 	.ctaContainer {
 		flex-direction: column;
-		align-self: center; /* Centrer les CTA pour les écrans de taille intermédiaire */
+		align-self: center;
 	}
 
 	.cta {
 		width: 100%;
 		text-align: center;
-		font-size: 1.75rem; /* Équivalent à 28px */
-		height: 2.625rem; /* Équivalent à 42px */
-		margin-top: 10px; /* Réduire l'espacement */
-		padding: 1.75rem; /* Équivalent à 28px */
+		font-size: 1.75rem;
+		height: 2.625rem;
+		margin-top: 10px;
+		padding: 1.75rem;
 	}
 }
 
 @media (max-width: 768px) {
 	.aboutSection {
 		flex-direction: column;
-		padding: 2.5rem; /* Équivalent à 20px */
+		padding: 2.5rem;
 	}
 
 	.aboutImageContainer,
 	.aboutContentContainer {
 		width: 100%;
-		padding: 10px; /* Réduit le padding à 10px */
+		padding: 10px;
 		margin: 0 auto;
 	}
 	.aboutContentContainer {
 		gap: 0.5rem;
 	}
 	.aboutImageContainer {
-		height: 20.31rem; /* Équivalent à 325pxpx */
+		height: 20.31rem;
 		margin-bottom: 2rem;
 	}
 
 	h2 {
-		font-size: 1.5rem; /* Taille adaptée aux mobiles */
+		font-size: 1.5rem;
 	}
 
 	p {
-		font-size: 1rem; /* Taille adaptée aux mobiles */
-		margin-bottom: 10px; /* Réduire l'espacement pour mobile */
+		font-size: 1rem;
+		margin-bottom: 10px;
 	}
 
 	.ctaContainer {
 		display: flex;
 		flex-direction: column;
-		justify-content: center; /* Centrer les CTA verticalement */
-		align-items: center; /* Centrer les CTA horizontalement */
+		justify-content: center;
+		align-items: center;
 	}
 	a {
 		margin: 0;
@@ -128,8 +129,8 @@ body {
 		margin-top: 20px;
 		width: 100%;
 		text-align: center;
-		font-size: 1.5rem; /* Équivalent à 24px */
+		font-size: 1.5rem;
 		padding: 1.5rem;
-		width: 12.5rem; /* Équivalent à 200px */
+		width: 12.5rem;
 	}
 }
