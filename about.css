@@ -11,7 +11,7 @@ body {
 }
 
 .aboutImageContainer {
-	width: 50%;
+	width: 45%;
 	background-color: var(--couleur-secondaire-claire);
 	display: flex;
 	justify-content: center;
@@ -20,24 +20,16 @@ body {
 }
 
 .aboutImage {
-	width: 80%; /* Ajuster pour une image plus petite */
+	width: 80%;
 	height: auto;
 }
 
 .aboutContentContainer {
-	width: 50%;
+	width: 45%;
 	padding: 0 100px;
 	display: flex;
 	flex-direction: column;
-}
-
-h2 {
-	font-size: 2rem; /* Taille adaptée aux mobiles */
-	margin-bottom: 50px; /* Réduire l'espacement pour mobile */
-}
-
-p {
-	margin-bottom: 20px; /* Réduire l'espacement pour mobile */
+	gap: 8rem;
 }
 
 .aboutText {
@@ -104,8 +96,12 @@ p {
 		padding: 10px; /* Réduit le padding à 10px */
 		margin: 0 auto;
 	}
+	.aboutContentContainer {
+		gap: 0.5rem;
+	}
 	.aboutImageContainer {
 		height: 20.31rem; /* Équivalent à 325pxpx */
+		margin-bottom: 2rem;
 	}
 
 	h2 {
