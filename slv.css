@@ -1,3 +1,4 @@
+/* 1rem = 16px */
 * {
 	margin: 0;
 	padding: 0;
@@ -17,7 +18,7 @@
 
 body {
 	background-color: var(--couleur-principale-body);
-	font-size: 1rem; /* Équivalent à 16px */
+	font-size: 1rem;
 }
 
 main {
@@ -33,12 +34,12 @@ h1,
 h2 {
 	font-family: "Economica", serif;
 	font-weight: 600;
-	font-size: 2.375rem; /* Équivalent à 38px */
+	font-size: 2.375rem;
 }
 
 .container {
 	display: flex;
-	flex-wrap: wrap; /* Permettre aux éléments de s'ajuster en fonction de l'espace disponible */
+	flex-wrap: wrap;
 	max-width: 80%;
 	justify-content: space-between;
 	align-items: stretch;
@@ -49,18 +50,18 @@ h2 {
 	flex: 1;
 	flex-direction: column;
 	justify-content: center;
-	padding: 3.125rem; /* Équivalent à 50px */
+	padding: 3.125rem;
 }
 
 .infoContainer h1,
 .infoContainer p {
-	margin-bottom: 1.875rem; /* Équivalent à 30px */
+	margin-bottom: 1.875rem;
 	width: 80%;
 }
 
 p {
 	font-family: "Montserrat", sans-serif;
-	font-size: 1rem; /* Équivalent à 16px */
+	font-size: 1rem;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--couleur-foncee);
@@ -70,13 +71,13 @@ p {
 	background-color: var(--couleur-orange);
 	color: var(--couleur-principale-body);
 	width: 100%; /* Adapte la largeur aux conteneurs parents */
-	max-width: 18.75rem; /* Équivalent à 300px */
-	height: 2.8125rem; /* Équivalent à 45px */
+	max-width: 18.75rem;
+	height: 2.8125rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-family: "Economica", serif;
-	font-size: 1.875rem; /* Équivalent à 30px */
+	font-size: 1.875rem;
 	font-weight: 400;
 	text-decoration: none;
 	box-shadow: 0.1875rem 0.1875rem 0.3125rem var(--couleur-secondaire-claire); /* Équivalent à 3px 3px 5px */
@@ -85,7 +86,7 @@ p {
 }
 
 .cta:hover {
-	transform: translateY(-0.3125rem); /* Équivalent à -5px */
+	transform: translateY(-0.3125rem);
 }
 
 .imgContainer {
@@ -94,12 +95,12 @@ p {
 	justify-content: center;
 	align-items: center;
 	background-color: var(--couleur-secondaire-claire);
-	padding: 11.29rem; /* Équivalent à 180.64px */
+	padding: 11.29rem;
 }
 
 .imgContainer img {
 	width: 100%;
-	max-width: 25rem; /* Équivalent à 400px */
+	max-width: 25rem;
 	height: auto;
 }
 
@@ -112,24 +113,24 @@ p {
 
 	.infoContainer {
 		width: 100%;
-		padding: 2.5rem; /* Équivalent à 40px */
+		padding: 2.5rem;
 	}
 
 	.imgContainer {
 		width: 100%;
-		padding: 8rem; /* Ajuste cette valeur selon tes besoins */
+		padding: 8rem;
 	}
 
 	.ctaContainer {
 		flex-direction: column;
 		align-self: center; /* Centrer les CTA pour les écrans de taille intermédiaire */
-		gap: 0.5rem; /* Espacement encore réduit pour les CTA */
+		gap: 0.5rem;
 	}
 
 	.cta {
 		width: 100%;
-		font-size: 1.75rem; /* Équivalent à 28px */
-		height: 2.625rem; /* Équivalent à 42px */
+		font-size: 1.75rem;
+		height: 2.625rem;
 	}
 }
 
@@ -142,23 +143,23 @@ p {
 
 	.infoContainer {
 		width: 100%;
-		padding: 1.25rem; /* Équivalent à 20px */
+		padding: 1.25rem;
 	}
 
 	.imgContainer {
 		width: 100%;
-		padding: 5rem; /* Ajuste cette valeur selon tes besoins */
+		padding: 5rem;
 	}
 
 	.ctaContainer {
 		flex-direction: column;
 		align-self: center; /* Centrer les CTA pour les petits écrans */
-		gap: 0.5rem; /* Espacement encore réduit pour les CTA sur mobiles */
+		gap: 0.5rem;
 	}
 
 	.cta {
 		width: 100%;
-		font-size: 1.5rem; /* Équivalent à 24px */
-		height: 2.5rem; /* Équivalent à 40px */
+		font-size: 1.5rem;
+		height: 2.5rem;
 	}
 }
