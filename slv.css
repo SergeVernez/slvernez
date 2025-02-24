@@ -52,6 +52,13 @@ h2 {
 	/* padding: 7rem 15rem; */
 	padding: 0 11.9rem;
 }
+.containerReverse {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	/* padding: 7rem 15rem; */
+	padding: 0 11.9rem;
+}
 
 /* .infoContainer {
 	display: flex;
@@ -133,6 +140,10 @@ p {
 		flex-direction: column;
 		padding: 0 2.5rem;
 	}
+	.containerReverse {
+		flex-direction: column-reverse;
+		padding: 0 2.5rem;
+	}
 	h2,
 	h1 {
 		font-size: 2rem;
@@ -166,6 +177,10 @@ p {
 /* Pour les écrans de taille moyenne, tels que les tablettes */
 @media (max-width: 1024px) {
 	.container {
+		flex-direction: column;
+		padding: 0 2.5rem;
+	}
+	.containerReverse {
 		flex-direction: column-reverse;
 		padding: 0 2.5rem;
 	}
