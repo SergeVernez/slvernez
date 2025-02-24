@@ -37,20 +37,35 @@ h2 {
 	font-size: 2.375rem;
 }
 
-.container {
+/* .container {
 	display: flex;
 	flex-wrap: wrap;
 	max-width: 80%;
 	justify-content: space-between;
 	align-items: stretch;
+	width: 100%;
+} */
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	/* padding: 7rem 15rem; */
+	padding: 0 11.9rem;
 }
 
-.infoContainer {
+/* .infoContainer {
 	display: flex;
 	flex: 1;
 	flex-direction: column;
 	justify-content: center;
 	padding: 3.125rem;
+} */
+.infoContainer {
+	width: 45%;
+	/* padding: 0 100px; */
+	display: flex;
+	flex-direction: column;
+	/* gap: 7.5rem; */
 }
 
 .infoContainer h1,
@@ -97,6 +112,14 @@ p {
 	background-color: var(--couleur-secondaire-claire);
 	padding: 11.29rem;
 }
+/* .imgContainer {
+	width: 45%;
+	background-color: var(--couleur-secondaire-claire);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 6rem;
+} */
 
 .imgContainer img {
 	width: 100%;
@@ -104,62 +127,40 @@ p {
 	height: auto;
 }
 
-/* Media Query pour les écrans de taille intermédiaire (tablettes en paysage) */
-@media (max-width: 1024px) {
-	.container {
-		flex-direction: column;
-		align-items: center;
-	}
-
-	.infoContainer {
-		width: 100%;
-		padding: 2.5rem;
-	}
-
-	.imgContainer {
-		width: 100%;
-		padding: 8rem;
-	}
-
-	.ctaContainer {
-		flex-direction: column;
-		align-self: center; /* Centrer les CTA pour les écrans de taille intermédiaire */
-		gap: 0.5rem;
-	}
-
-	.cta {
-		width: 100%;
-		font-size: 1.75rem;
-		height: 2.625rem;
-	}
-}
-
-/* Media Query pour les petits écrans (tablettes en portrait et mobile) */
+/* Pour les écrans plus petits, tels que les téléphones */
 @media (max-width: 768px) {
 	.container {
 		flex-direction: column;
-		align-items: center;
+		padding: 1rem;
 	}
-
 	.infoContainer {
 		width: 100%;
-		padding: 1.25rem;
 	}
-
 	.imgContainer {
 		width: 100%;
-		padding: 5rem;
+		padding: 2rem;
 	}
-
-	.ctaContainer {
-		flex-direction: column;
-		align-self: center; /* Centrer les CTA pour les petits écrans */
-		gap: 0.5rem;
-	}
-
 	.cta {
-		width: 100%;
 		font-size: 1.5rem;
-		height: 2.5rem;
+		width: 100%;
+	}
+}
+
+/* Pour les écrans de taille moyenne, tels que les tablettes */
+@media (max-width: 1024px) {
+	.container {
+		flex-direction: column;
+		padding: 2rem;
+	}
+	.infoContainer {
+		width: 100%;
+	}
+	.imgContainer {
+		width: 100%;
+		padding: 3rem;
+	}
+	.cta {
+		font-size: 1.75rem;
+		width: 100%;
 	}
 }
