@@ -1,5 +1,5 @@
 /* 1rem = 16px */
-* :root {
+:root {
 	font-size: 16px;
 	--couleur-principale-body: #faf7f0;
 	--couleur-secondaire-claire: #d8d2c2;
@@ -24,6 +24,11 @@ body {
 	padding: 2rem 20rem;
 }
 
+h3,
+p {
+	width: 100%;
+}
+
 h3 {
 	margin: 3rem 0 1rem 0;
 	color: var(--couleur-foncee);
@@ -40,4 +45,53 @@ h3 {
 
 .ctaContainer .cta {
 	margin: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+	.container {
+		max-width: 90%;
+		padding: 1.5rem 10rem;
+	}
+
+	.infoContainer {
+		padding: 1.5rem 5rem;
+	}
+
+	h3 {
+		margin: 2rem 0 1rem 0;
+	}
+
+	.ctaContainer {
+		flex-direction: column;
+		padding: 0 10rem;
+		gap: 2rem;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 100%;
+		padding: 1rem 2rem;
+	}
+
+	.infoContainer {
+		padding: 1rem;
+	}
+	.infoContainer p {
+		width: 100%;
+	}
+	h3 {
+		margin: 1.5rem 0 0.5rem 0;
+	}
+
+	p {
+		width: 100%;
+	}
+
+	.ctaContainer {
+		flex-direction: column;
+		padding: 0 2rem;
+		gap: 1rem;
+		margin: 0;
+	}
 }
