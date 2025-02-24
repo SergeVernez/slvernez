@@ -131,7 +131,11 @@ p {
 @media (max-width: 768px) {
 	.container {
 		flex-direction: column;
-		padding: 1rem;
+		padding: 0 2.5rem;
+	}
+	h2,
+	h1 {
+		font-size: 2rem;
 	}
 	.infoContainer {
 		width: 100%;
@@ -139,18 +143,31 @@ p {
 	.imgContainer {
 		width: 100%;
 		padding: 2rem;
+		margin-bottom: 2rem;
+	}
+	.ctaContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	a {
+		margin: 0;
+		padding: 0;
 	}
 	.cta {
+		margin-top: 20px;
+		text-align: center;
 		font-size: 1.5rem;
-		width: 100%;
+		padding: 1.5rem;
+		width: 12.5rem;
 	}
 }
 
 /* Pour les écrans de taille moyenne, tels que les tablettes */
 @media (max-width: 1024px) {
 	.container {
-		flex-direction: column;
-		padding: 2rem;
+		flex-direction: column-reverse;
+		padding: 0 2.5rem;
 	}
 	.infoContainer {
 		width: 100%;
@@ -159,8 +176,21 @@ p {
 		width: 100%;
 		padding: 3rem;
 	}
+	.ctaContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	a {
+		margin: 0;
+		padding: 0;
+	}
 	.cta {
-		font-size: 1.75rem;
-		width: 100%;
+		margin-top: 20px;
+
+		text-align: center;
+		font-size: 1.5rem;
+		padding: 1.5rem;
+		width: 12.5rem;
 	}
 }
