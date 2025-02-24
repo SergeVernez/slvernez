@@ -99,6 +99,7 @@ body {
 	}
 	.aboutContentContainer {
 		gap: 0.5rem;
+		padding: 2.5rem 0;
 	}
 	.aboutImageContainer {
 		height: 20.31rem;
@@ -110,7 +111,7 @@ body {
 
 	p {
 		font-size: 1rem;
-		margin-bottom: 10px;
+		margin-bottom: 2rem;
 	}
 
 	.ctaContainer {
@@ -119,7 +120,7 @@ body {
 		justify-content: center;
 		align-items: center;
 	}
-	a {
+	a.cta {
 		margin: 0;
 		padding: 0;
 	}

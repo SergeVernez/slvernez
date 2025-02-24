@@ -35,6 +35,7 @@ h2 {
 	font-family: "Economica", serif;
 	font-weight: 600;
 	font-size: 2.375rem;
+	margin-top: 8rem;
 }
 
 /* .container {
@@ -146,25 +147,29 @@ p {
 	}
 	h2,
 	h1 {
+		margin-top: auto;
 		font-size: 2rem;
 	}
 	.infoContainer {
 		width: 100%;
 	}
+	.infoContainer p {
+		width: 100%;
+	}
 	.imgContainer {
 		width: 100%;
 		padding: 2rem;
-		margin-bottom: 2rem;
+		margin-bottom: 4rem;
 	}
 	.ctaContainer {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-	a {
+	/* a {
 		margin: 0;
 		padding: 0;
-	}
+	} */
 	.cta {
 		margin-top: 20px;
 		text-align: center;
@@ -174,15 +179,15 @@ p {
 	}
 }
 
-/* Pour les écrans de taille moyenne, tels que les tablettes */
+/* Pour les écrans de taille moyenne (tablette)*/
 @media (max-width: 1024px) {
-	.container {
+	.container,
+	.containerReverse {
 		flex-direction: column;
 		padding: 0 2.5rem;
 	}
 	.containerReverse {
 		flex-direction: column-reverse;
-		padding: 0 2.5rem;
 	}
 	.infoContainer {
 		width: 100%;
@@ -196,13 +201,12 @@ p {
 		justify-content: center;
 		align-items: center;
 	}
-	a {
+	/* a {
 		margin: 0;
 		padding: 0;
-	}
+	} */
 	.cta {
 		margin-top: 20px;
-
 		text-align: center;
 		font-size: 1.5rem;
 		padding: 1.5rem;

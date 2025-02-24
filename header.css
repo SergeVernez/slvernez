@@ -129,6 +129,9 @@ nav ul li a.active {
 
 /* Media Query pour les petits écrans (tablettes en portrait et mobile) */
 @media (max-width: 768px) {
+	header {
+		padding-top: 1.5rem;
+	}
 	nav {
 		flex-direction: column;
 		align-items: center;
@@ -141,19 +144,27 @@ nav ul li a.active {
 	nav ul {
 		flex-direction: column;
 		align-items: center;
-		gap: 10px;
-		margin-top: 15px;
+		gap: 1px;
+		margin: 0;
+		padding: 0;
 		display: none;
 	}
 
 	nav ul.show {
 		display: flex;
 	}
-
+	nav ul li a {
+		margin: 0 0 1rem;
+	}
+	a.logoNav {
+		margin: 0;
+	}
 	.social-icons {
 		margin-top: 10px;
 	}
-
+	div .social-icons {
+		margin-top: 1rem;
+	}
 	.logo {
 		margin-left: 0;
 		margin-bottom: 15px;

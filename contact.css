@@ -3,12 +3,15 @@ body {
 	background-color: var(--couleur-principale-body);
 	color: var(--couleur-noire);
 }
+h2 {
+	margin: 0;
+}
 
 .contactSection {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	padding: 7rem 15rem; 
+	padding: 7rem 15rem;
 }
 
 .contactText {
@@ -17,7 +20,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	gap: 9.4rem; 
+	gap: 9.4rem;
 }
 
 .contactFormContainer {
@@ -26,7 +29,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: var(--couleur-noire);
-	padding: 6rem; 
+	padding: 6rem;
 }
 
 .contactForm {
@@ -41,14 +44,14 @@ body {
 .formGroup {
 	display: flex;
 	flex-direction: row;
-	gap: 1.25rem; 
-	margin-bottom: 1.25rem; 
+	gap: 1.25rem;
+	margin-bottom: 1.25rem;
 }
 
 .formGroup input,
 .formGroup textarea {
 	width: 100%;
-	padding: 0.625rem; 
+	padding: 0.625rem;
 	background-color: var(--couleur-principale-body);
 	border: 1px solid var(--couleur-secondaire-claire);
 	font-size: 1rem;
@@ -56,7 +59,7 @@ body {
 
 textarea {
 	resize: none;
-	height: 15.625rem; 
+	height: 15.625rem;
 	overflow: auto; /* Active le défilement automatique */
 	font-family: "Montserrat", sans-serif;
 }
@@ -66,10 +69,10 @@ button {
 	justify-content: center;
 	align-items: center;
 	font-family: "Economica", serif;
-	font-size: 1.5rem; 
+	font-size: 1.5rem;
 	font-weight: 600;
-	padding: 0.625rem; 
-	width: 9.375rem; 
+	padding: 0.625rem;
+	width: 9.375rem;
 	background-color: var(--couleur-orange);
 	color: var(--couleur-principale-body);
 	border: none;
@@ -88,20 +91,20 @@ button:hover {
 @media (max-width: 768px) {
 	.contactSection {
 		flex-direction: column;
-		padding: 0 2.5rem; 
+		padding: 0 2.5rem;
 	}
 
 	.contactFormContainer {
 		width: 100%;
-		padding: 2rem; 
-		margin-bottom: 5rem; 
+		padding: 48px;
+		margin-bottom: 5rem;
 	}
 
 	.contactText {
 		width: 100%;
-		padding: 0 0.5rem; 
-		margin: 0 0 5rem 0; 
-		gap: 1rem; 
+		padding: 0 0.5rem;
+		margin: 0 0 5rem 0;
+		gap: 1rem;
 	}
 
 	.contactText h2 {
@@ -123,16 +126,15 @@ button:hover {
 		justify-content: center;
 	}
 
-	a {
-		margin: 0;
-		padding: 0;
-	}
 	.cta {
 		margin-top: 20px;
 		width: 100%;
 		text-align: center;
-		font-size: 1.5rem; 
+		font-size: 1.5rem;
 		padding: 1.5rem;
-		width: 12.5rem; 
+		width: 12.5rem;
+	}
+	div.contactFormContainer {
+		margin: 0;
 	}
 }
