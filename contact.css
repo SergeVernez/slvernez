@@ -96,6 +96,9 @@ button {
 button:hover {
 	transform: translateY(-0.3125rem);
 }
+.ctaResponsive {
+	display: none;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -137,14 +140,35 @@ button:hover {
 	}
 
 	.cta {
-		margin-top: 20px;
-		width: 100%;
-		text-align: center;
-		font-size: 1.5rem;
+		display: none;
+	}
+	.ctaResponsive {
+		background-color: var(--couleur-orange);
+		color: var(--couleur-principale-body);
 		padding: 1.5rem;
 		width: 12.5rem;
+		max-width: 18.75rem;
+		height: 2.8125rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: "Economica", serif;
+		font-size: 1.5rem;
+		font-weight: 400;
+		text-decoration: none;
+		box-shadow: 0.1875rem 0.1875rem 0.3125rem var(--couleur-secondaire-claire); /* Équivalent à 3px 3px 5px */
+		text-align: center;
+		transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 	}
+
+	.ctaResponsive:hover {
+		transform: translateY(-0.3125rem);
+	}
+
 	div.contactFormContainer {
+		margin: 0;
+	}
+	div.contactText {
 		margin: 0;
 	}
 }
