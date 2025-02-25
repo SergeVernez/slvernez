@@ -1,0 +1,28 @@
+:root {
+	font-size: 16px;
+	--couleur-principale-body: #faf7f0;
+	--couleur-secondaire-claire: #d8d2c2;
+	--couleur-orange: #b17457;
+	--couleur-foncee: #4a4947;
+	--couleur-noire: #131313;
+	--couleur-gris-claire: #e3e3e3;
+	--couleur-gris-foncee: #f7f7f7;
+}
+
+.cta {
+	background-color: var(--couleur-orange);
+	color: var(--couleur-principale-body);
+	width: 100%; /* Adapte la largeur aux conteneurs parents */
+	max-width: 18.75rem;
+	height: 2.8125rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Economica", serif;
+	font-size: 1.875rem;
+	font-weight: 400;
+	text-decoration: none;
+	box-shadow: 0.1875rem 0.1875rem 0.3125rem var(--couleur-secondaire-claire); /* Équivalent à 3px 3px 5px */
+	text-align: center;
+	transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
