@@ -106,6 +106,7 @@ p {
 	box-shadow: 0.1875rem 0.1875rem 0.3125rem var(--couleur-secondaire-claire); /* Équivalent à 3px 3px 5px */
 	text-align: center;
 	transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+
 }
 
 .cta:hover {

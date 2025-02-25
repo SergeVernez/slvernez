@@ -38,7 +38,9 @@ body {
 	flex-direction: column;
 	gap: 2rem;
 }
-
+h2 {
+	margin: 0;
+}
 /* CTA côte à côte */
 .ctaContainer {
 	display: flex;

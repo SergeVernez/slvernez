@@ -1,4 +1,8 @@
 /* 1rem = 16px */
+* {
+	margin: 0;
+	padding: 0;
+}
 :root {
 	font-size: 16px;
 	--couleur-principale-body: #faf7f0;
@@ -15,13 +19,17 @@ body {
 }
 .container {
 	display: flex;
-	flex-direction: column; /* Aligne les divs verticalement */
+	flex-direction: column;
 	max-width: 80%;
 	justify-content: space-between;
 	align-items: stretch;
 }
-.infoContainer {
-	padding: 2rem 20rem;
+div.infoContainer {
+	width: 100%;
+}
+.infoContainer h1,
+.infoContainer p {
+	width: 100%;
 }
 
 h3,
@@ -37,9 +45,9 @@ h3 {
 
 .ctaContainer {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	margin-top: 2rem;
-	padding: 0 20rem;
+	padding: 0 20rem 10rem;
 	gap: 5rem;
 }
 
@@ -50,7 +58,7 @@ h3 {
 @media (max-width: 1024px) {
 	.container {
 		max-width: 90%;
-		padding: 1.5rem 10rem;
+		padding: 1.5rem 5rem;
 	}
 
 	.infoContainer {
@@ -63,7 +71,7 @@ h3 {
 
 	.ctaContainer {
 		flex-direction: column;
-		padding: 0 10rem;
+		padding: 0 5rem;
 		gap: 2rem;
 	}
 }
@@ -77,9 +85,7 @@ h3 {
 	.infoContainer {
 		padding: 1rem;
 	}
-	.infoContainer p {
-		width: 100%;
-	}
+
 	h3 {
 		margin: 1.5rem 0 0.5rem 0;
 	}
