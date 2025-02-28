@@ -15,15 +15,15 @@
 	box-sizing: border-box;
 }
 
-body {
+/* body {
 	margin: 0;
 	font-family: Arial;
-}
+} */
 
-.header {
+/* .header {
 	text-align: center;
 	padding: 32px;
-}
+} */
 
 .row {
 	display: -ms-flexbox; /* IE10 */
