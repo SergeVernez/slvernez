@@ -22,10 +22,10 @@ body {
 	flex-direction: column;
 	max-width: 80%;
 	justify-content: space-between;
-	align-items: stretch;
+	align-items: center;
 }
 div.infoContainer {
-	width: 100%;
+	width: 70%;
 }
 .infoContainer h1,
 .infoContainer p {
@@ -49,6 +49,8 @@ h3 {
 	margin-top: 2rem;
 	padding: 0 20rem 10rem;
 	gap: 5rem;
+	width: 70%;
+	justify-content: center;
 }
 
 .ctaContainer .cta {
@@ -99,5 +101,8 @@ h3 {
 		padding: 0 2rem;
 		gap: 1rem;
 		margin: 0;
+	}
+	div.infoContainer {
+		width: 90%;
 	}
 }
