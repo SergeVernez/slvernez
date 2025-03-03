@@ -41,9 +41,12 @@ h3 {
 	margin: 1rem 0 0.5rem 0;
 	color: var(--couleur-foncee);
 	font-weight: 600;
+	font-family: "Montserrat", serif;
+	color: var(--couleur-orange);
 }
 h2 {
 	margin-top: inherit;
+	margin-bottom: 3rem;
 }
 
 .ctaContainer {
