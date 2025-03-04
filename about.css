@@ -41,6 +41,9 @@ body {
 	flex-direction: column;
 	gap: 7.5rem;
 }
+.aboutContentContainer h2 {
+	margin: inherit;
+}
 
 .aboutText {
 	display: flex;

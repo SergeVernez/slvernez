@@ -18,9 +18,6 @@ body {
 	background-color: var(--couleur-principale-body);
 	color: var(--couleur-noire);
 }
-h2 {
-	margin: 0;
-}
 
 .contactSection {
 	display: flex;
@@ -36,6 +33,9 @@ h2 {
 	flex-direction: column;
 	justify-content: flex-start;
 	gap: 9.4rem;
+}
+.contactText h2 {
+	margin: inherit;
 }
 
 .contactFormContainer {
