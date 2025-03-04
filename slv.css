@@ -143,12 +143,10 @@ p {
 		justify-content: center;
 		align-items: center;
 	}
-	/* a {
-		margin: 0;
-		padding: 0;
-	} */
+
 	.cta {
-		margin-top: 20px;
+		margin-top: 1.25rem;
+		margin-bottom: 2.5rem;
 		text-align: center;
 		font-size: 1.5rem;
 		padding: 1.5rem;
