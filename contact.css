@@ -176,4 +176,7 @@ button:hover {
 	div.contactText {
 		margin: 0;
 	}
+	#scrollTopBtn {
+		font-family: inherit;
+	}
 }
