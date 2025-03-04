@@ -38,42 +38,23 @@ h2 {
 	margin-top: 8rem;
 }
 
-/* .container {
-	display: flex;
-	flex-wrap: wrap;
-	max-width: 80%;
-	justify-content: space-between;
-	align-items: stretch;
-	width: 100%;
-} */
 .container {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	/* padding: 7rem 15rem; */
 	padding: 0 11.9rem;
 }
 .containerReverse {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	/* padding: 7rem 15rem; */
 	padding: 0 11.9rem;
 }
 
-/* .infoContainer {
-	display: flex;
-	flex: 1;
-	flex-direction: column;
-	justify-content: center;
-	padding: 3.125rem;
-} */
 .infoContainer {
 	width: 45%;
-	/* padding: 0 100px; */
 	display: flex;
 	flex-direction: column;
-	/* gap: 7.5rem; */
 }
 
 .infoContainer h1,
@@ -106,7 +87,6 @@ p {
 	box-shadow: 0.1875rem 0.1875rem 0.3125rem var(--couleur-secondaire-claire); /* Équivalent à 3px 3px 5px */
 	text-align: center;
 	transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-
 }
 
 .cta:hover {
@@ -121,14 +101,6 @@ p {
 	background-color: var(--couleur-secondaire-claire);
 	padding: 11.29rem;
 }
-/* .imgContainer {
-	width: 45%;
-	background-color: var(--couleur-secondaire-claire);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 6rem;
-} */
 
 .imgContainer img {
 	width: 100%;

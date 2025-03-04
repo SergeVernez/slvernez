@@ -14,16 +14,6 @@
 * {
 	box-sizing: border-box;
 }
-
-/* body {
-	margin: 0;
-	font-family: Arial;
-} */
-
-/* .header {
-	text-align: center;
-	padding: 32px;
-} */
 .container {
 	flex-direction: column;
 }
@@ -78,20 +68,3 @@
 		padding: 4rem 3rem; /* Ajustez la valeur selon vos besoins */
 	}
 }
-
-/* @media (max-width: 1024px) {
-	.column {
-		-ms-flex: 50%;
-		flex: 50%;
-		max-width: 50%;
-	}
-}
-
-
-@media (max-width: 768px) {
-	.column {
-		-ms-flex: 100%;
-		flex: 100%;
-		max-width: 100%;
-	}
-} */
