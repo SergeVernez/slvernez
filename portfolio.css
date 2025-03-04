@@ -8,8 +8,7 @@
 	--couleur-gris-claire: #e3e3e3;
 	--couleur-gris-foncee: #f7f7f7;
 }
-.cta {
-}
+
 * {
 	box-sizing: border-box;
 }
@@ -78,5 +77,8 @@
 	}
 	.ctaContainer {
 		padding: 4rem 3rem; /* Ajustez la valeur selon vos besoins */
+	}
+	.row {
+		padding: 0;
 	}
 }
