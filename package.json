@@ -1,5 +1,26 @@
 {
   "dependencies": {
     "nodemailer": "^6.10.0"
-  }
+  },
+  "name": "slvernez",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000s\u0000l\u0000v\u0000e\u0000r\u0000n\u0000e\u0000z\u0000\r\u0000 \u0000",
+  "main": "footer.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SergeVernez/slvernez.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SergeVernez/slvernez/issues"
+  },
+  "homepage": "https://github.com/SergeVernez/slvernez#readme"
 }
