@@ -14,18 +14,20 @@ footer {
 	color: var(--couleur-principale-body);
 	padding: 10px 0;
 	font-family: "Montserrat", serif;
+	font-size: 1rem;
 }
 
 .content {
 	display: flex;
 	justify-content: space-between;
 	align-items: stretch;
+	margin: 0 10rem;
 }
 
 .menuSecondaire,
 .contactInfo,
 .suivezMoi {
-	margin: 0 200px;
+	margin: 0 100px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -35,9 +37,9 @@ footer {
 .separator {
 	width: 2px;
 	background-color: var(--couleur-principale-body);
-	height: 350px;
+	height: 25rem;
 	align-self: center;
-	margin-bottom: 50px;
+	margin-bottom: 2.5rem;
 }
 
 .menuSecondaire ul,
@@ -49,13 +51,14 @@ footer {
 }
 
 .menuSecondaire a {
+	font-family: "Montserrat", serif;
 	color: var(--couleur-principale-body);
 	text-decoration: none;
 	display: inline-block;
-	padding: 10px 20px;
+	padding: 0.5rem 1.25rem;
 	border: 2px solid var(--couleur-principale-body);
-	margin: 5px 0;
-	width: 120px;
+	margin: 7px 0;
+	width: 10.5rem;
 	text-align: center;
 }
 
@@ -66,30 +69,28 @@ footer {
 
 footer p,
 footer a {
+	font-family: "Montserrat", serif;
 	margin: 0;
 	color: var(--couleur-principale-body);
 }
 
 .contactInfo {
-	margin-left: 150px;
-	margin-right: 150px;
+	/* margin-left: 50px;
+	margin-right: 50px; */
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 	align-items: center;
 }
 .contactInfo p {
-	margin-bottom: 2rem;
-	text-decoration: none;
 	font-size: 1rem;
+	margin-bottom: 1rem;
+	text-decoration: none;
 }
 .contactInfo a {
-	margin-bottom: 2rem;
+	font-size: 1rem;
+	margin-bottom: 1rem;
 	text-decoration: none;
-	font-size: 1.5rem;
-}
-p.titre {
-	font-size: 1.5rem;
 }
 
 .suivezMoi {
@@ -117,12 +118,19 @@ footer div {
 .titre {
 	font-family: "Economica", serif;
 	font-weight: 600;
-	font-size: 25px;
+	font-size: 2rem;
 	width: 170px;
-	padding-bottom: 40px;
 	margin-top: 0;
-	margin-bottom: 25px;
+
 	text-align: center;
+}
+p.titre {
+	margin-top: 2rem;
+	font-size: 1.8rem;
+	margin-bottom: 3rem;
+}
+.space {
+	height: 2.5rem;
 }
 
 @media (max-width: 768px) {
