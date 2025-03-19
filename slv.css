@@ -28,7 +28,7 @@ main {
 	/* width: 100%; */
 	/* justify-content: center;
 	align-items: center; */
-	margin: 6.25rem 0;
+	margin: 6rem 0;
 }
 
 .container,
@@ -36,7 +36,7 @@ main {
 	display: flex;
 	width: 80vw; /* Largeur définie de la section */
 	height: auto; /* Hauteur dynamique */
-	min-height: 600px; /* Hauteur minimale */
+	min-height: 34.375rem; /* Hauteur minimale */
 	justify-content: space-between; /* Répartit les colonnes également */
 	align-items: center; /* Centre verticalement les contenus */
 	margin: 0 auto; /* Centre la section horizontalement */
@@ -55,6 +55,7 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	text-align: left;
+	margin-left: 5rem;
 }
 
 .imgContainer {
@@ -67,8 +68,8 @@ main {
 	overflow: hidden; /* Coupe les débordements */
 }
 .imgWrapper {
-	width: 80%; /* L’image et son cadre occupent 80% de `.imgContainer` */
-	height: 80%; /* Assure une taille proportionnelle */
+	width: 75%; /* L’image et son cadre occupent 80% de `.imgContainer` */
+	height: 75%; /* Assure une taille proportionnelle */
 	display: flex;
 	justify-content: center;
 	align-items: center;
