@@ -19,17 +19,72 @@
 body {
 	background-color: var(--couleur-principale-body);
 	font-size: 1rem;
-	justify-content: center;
-	min-height: 100vh;
+	/* min-height: 100vh; */
 }
 
 main {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	/* width: 100%; */
+	/* justify-content: center;
+	align-items: center; */
+	margin: 6.25rem 0;
+}
+
+.container,
+.containerReverse {
+	display: flex;
+	width: 80vw; /* Largeur définie de la section */
+	height: auto; /* Hauteur dynamique */
+	min-height: 600px; /* Hauteur minimale */
+	justify-content: space-between; /* Répartit les colonnes également */
+	align-items: center; /* Centre verticalement les contenus */
+	margin: 0 auto; /* Centre la section horizontalement */
+}
+
+.infoContainer {
+	display: flex;
+	width: 50%; /* Chaque colonne occupe la moitié de la section */
+	justify-content: center; /* Centre verticalement */
+	align-items: center;
+	/* padding: 2rem;  */
+}
+.textWrapper {
+	width: 80%; /* Prend toute la largeur de la colonne */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: left;
+}
+
+.imgContainer {
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 6.25rem 0;
+	background-color: var(--couleur-secondaire-claire); /* Couleur du cadre */
+	width: 50%; /* Même largeur que `.infoContainer` */
+	aspect-ratio: 1/1; /* Maintient le conteneur carré */
+	overflow: hidden; /* Coupe les débordements */
+}
+.imgWrapper {
+	width: 80%; /* L’image et son cadre occupent 80% de `.imgContainer` */
+	height: 80%; /* Assure une taille proportionnelle */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden; /* Coupe tout débordement éventuel */
+}
+
+.imgContainer img {
+	width: 100%; /* L’image remplit le cadre */
+	height: 100%;
+	object-fit: cover; /* Ajuste l’image sans déformation */
+}
+
+.infoContainer h1,
+.infoContainer p {
+	margin-bottom: 1.875rem;
+	width: 80%;
 }
 
 h1,
@@ -37,48 +92,6 @@ h2 {
 	font-family: "Economica", serif;
 	font-weight: 600;
 	font-size: 2.375rem;
-}
-p,
-a {
-	font-family: "Economica", serif;
-}
-
-.container,
-.containerReverse {
-	display: flex;
-	width: 80vw;
-	height: 800px;
-}
-
-.infoContainer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: auto;
-	text-align: left;
-}
-.imgContainer {
-	width: auto;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: var(--couleur-secondaire-claire);
-	overflow: hidden;
-	aspect-ratio: 1/1;
-}
-
-.imgContainer img {
-	width: 60%;
-	height: 60%;
-	object-fit: cover;
-}
-
-.infoContainer h1,
-.infoContainer p {
-	margin-bottom: 1.875rem;
-	width: 80%;
 }
 
 p {
@@ -92,7 +105,7 @@ p {
 .cta {
 	background-color: var(--couleur-orange);
 	color: var(--couleur-principale-body);
-	width: 100%; /* Adapte la largeur aux conteneurs parents */
+	width: 100%;
 	max-width: 18.75rem;
 	height: 2.8125rem;
 	display: flex;
@@ -102,15 +115,33 @@ p {
 	font-size: 1.875rem;
 	font-weight: 400;
 	text-decoration: none;
-	box-shadow: 0.1875rem 0.1875rem 0.3125rem var(--couleur-secondaire-claire); /* Équivalent à 3px 3px 5px */
+	box-shadow: 0.1875rem 0.1875rem 0.3125rem var(--couleur-secondaire-claire);
 	text-align: center;
 	transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .cta:hover {
 	transform: translateY(-0.3125rem);
+	background-color: var(--couleur-secondaire-claire);
+	box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
 }
-.ctaContainer {
-	width: 100%;
-	margin-left: 8.5rem;
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+	h1,
+	h2 {
+		font-size: 2rem;
+	}
+	.container,
+	.containerReverse {
+		flex-direction: column;
+		width: 95%;
+		min-height: auto;
+	}
+	.infoContainer {
+		width: 100%;
+	}
+	.imgContainer {
+		width: 100%;
+	}
 }
