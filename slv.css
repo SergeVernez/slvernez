@@ -50,7 +50,7 @@ main {
 	/* padding: 2rem;  */
 }
 .textWrapper {
-	width: 80%; /* Prend toute la largeur de la colonne */
+	width: 100%; /* Prend toute la largeur de la colonne */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
