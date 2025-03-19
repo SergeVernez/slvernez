@@ -19,38 +19,33 @@
 body {
 	background-color: var(--couleur-principale-body);
 	font-size: 1rem;
-	/* min-height: 100vh; */
 }
 
 main {
 	display: flex;
 	flex-direction: column;
-	/* width: 100%; */
-	/* justify-content: center;
-	align-items: center; */
 	margin: 6rem 0;
 }
 
 .container,
 .containerReverse {
 	display: flex;
-	width: 80vw; /* Largeur définie de la section */
-	height: auto; /* Hauteur dynamique */
-	min-height: 34.375rem; /* Hauteur minimale */
-	justify-content: space-between; /* Répartit les colonnes également */
-	align-items: center; /* Centre verticalement les contenus */
-	margin: 0 auto; /* Centre la section horizontalement */
+	width: 80vw;
+	height: auto;
+	min-height: 34.375rem;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
 }
 
 .infoContainer {
 	display: flex;
-	width: 50%; /* Chaque colonne occupe la moitié de la section */
-	justify-content: center; /* Centre verticalement */
+	width: 50%;
+	justify-content: center;
 	align-items: center;
-	/* padding: 2rem;  */
 }
 .textWrapper {
-	width: 100%; /* Prend toute la largeur de la colonne */
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -62,24 +57,24 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: var(--couleur-secondaire-claire); /* Couleur du cadre */
-	width: 50%; /* Même largeur que `.infoContainer` */
-	aspect-ratio: 1/1; /* Maintient le conteneur carré */
-	overflow: hidden; /* Coupe les débordements */
+	background-color: var(--couleur-secondaire-claire);
+	width: 50%;
+	aspect-ratio: 1/1;
+	overflow: hidden;
 }
 .imgWrapper {
-	width: 75%; /* L’image et son cadre occupent 80% de `.imgContainer` */
-	height: 75%; /* Assure une taille proportionnelle */
+	width: 75%;
+	height: 75%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	overflow: hidden; /* Coupe tout débordement éventuel */
+	overflow: hidden;
 }
 
 .imgContainer img {
-	width: 100%; /* L’image remplit le cadre */
+	width: 100%;
 	height: 100%;
-	object-fit: cover; /* Ajuste l’image sans déformation */
+	object-fit: cover;
 }
 
 .infoContainer h1,
@@ -127,7 +122,38 @@ p {
 	box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 
-/* Responsiveness */
+/* Responsive */
+
+@media (min-width: 1440px) {
+	.container,
+	.containerReverse {
+		width: 70vw;
+		min-height: 40rem;
+	}
+	h1,
+	h2 {
+		font-size: 2.5rem;
+	}
+	.textWrapper {
+		margin-left: 4rem;
+	}
+}
+
+@media (max-width: 1440px) and (min-width: 1024px) {
+	.container,
+	.containerReverse {
+		width: 80vw;
+		min-height: 34.375rem;
+	}
+	h1,
+	h2 {
+		font-size: 2.375rem;
+	}
+	.textWrapper {
+		margin-left: 5rem;
+	}
+}
+
 @media (max-width: 1024px) {
 	h1,
 	h2 {
@@ -138,11 +164,91 @@ p {
 		flex-direction: column;
 		width: 95%;
 		min-height: auto;
+		padding: 2rem 0;
 	}
 	.infoContainer {
 		width: 100%;
 	}
 	.imgContainer {
 		width: 100%;
+	}
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+	.container,
+	.containerReverse {
+		flex-direction: column;
+		width: 90vw;
+		min-height: auto;
+	}
+	.infoContainer,
+	.imgContainer {
+		width: 100%;
+		margin: 1rem 0;
+	}
+	.textWrapper {
+		margin-left: 2rem;
+		padding: 1rem;
+	}
+	.imgWrapper {
+		width: 90%;
+	}
+}
+
+@media (max-width: 768px) {
+	.container,
+	.containerReverse {
+		flex-direction: column;
+		width: 95%;
+		padding: 2rem;
+	}
+	.infoContainer,
+	.imgContainer {
+		width: 100%;
+		margin: 1rem 0;
+	}
+	.textWrapper {
+		margin-left: 1rem;
+		padding: 1rem;
+	}
+	.imgWrapper {
+		width: 95%;
+		height: auto;
+	}
+	h1,
+	h2 {
+		font-size: 1.8rem;
+	}
+	p {
+		font-size: 0.9rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.container,
+	.containerReverse {
+		flex-direction: column;
+		width: 100%;
+		padding: 1rem;
+	}
+	.textWrapper {
+		margin-left: 0.5rem;
+		padding: 0.5rem;
+	}
+	.imgWrapper {
+		width: 100%;
+		height: auto;
+	}
+	h1,
+	h2 {
+		font-size: 1.5rem;
+	}
+	p {
+		font-size: 0.85rem;
+		line-height: 1.4;
+	}
+	.cta {
+		font-size: 1rem;
+		max-width: 15rem;
 	}
 }
