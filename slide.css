@@ -7,11 +7,14 @@
 	--couleur-gris-claire: #e3e3e3;
 	--couleur-gris-foncee: #f7f7f7;
 }
-
+.imgSlide{
+	background-color: red;
+}
 body {
 	font-family: "Montserrat", sans-serif;
 	margin: 0;
 	overflow-x: hidden;
+	
 }
 
 .slider-container {
@@ -19,12 +22,12 @@ body {
 	max-width: 100%;
 	margin: auto;
 	overflow: hidden;
-	background-color: var(--couleur-noire);
 }
 
 .slider {
 	display: flex;
-	transition: transform 0.5s ease-in-out;
+	transition: transform 0.7s ease-in-out;
+	
 }
 
 .slide {
@@ -33,15 +36,18 @@ body {
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 	position: relative;
+
 }
 
 .slide.active {
 	opacity: 1;
+
 }
 
 .slide img {
 	width: 100%;
 	display: block;
+
 }
 
 .caption {

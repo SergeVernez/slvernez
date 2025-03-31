@@ -2,7 +2,7 @@ header {
 	background-color: var(--couleur-noire);
 	display: flex;
 	justify-content: center;
-	padding-top: 50px;
+	padding: 50px 0;
 }
 
 /*-------------------nav-------------------*/
@@ -18,9 +18,10 @@ nav {
 }
 
 .logo {
-	width: 6.25rem; /* Équivalent à 100px */
+	width: 8rem;
 	height: auto;
-	margin-left: 1.25rem;
+	/* margin-left: 1.25rem; */
+	/* margin-bottom: 2rem; */
 }
 
 .menu-icon {

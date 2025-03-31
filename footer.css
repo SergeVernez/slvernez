@@ -132,7 +132,10 @@ p.titre {
 .space {
 	height: 2.5rem;
 }
-
+.logoFooter{
+	width: 7rem;
+	height: auto;
+}
 @media (max-width: 768px) {
 	.content {
 		flex-direction: column;
