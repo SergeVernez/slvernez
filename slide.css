@@ -7,9 +7,7 @@
 	--couleur-gris-claire: #e3e3e3;
 	--couleur-gris-foncee: #f7f7f7;
 }
-.imgSlide{
-	background-color: red;
-}
+
 body {
 	font-family: "Montserrat", sans-serif;
 	margin: 0;
