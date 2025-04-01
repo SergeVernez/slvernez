@@ -104,16 +104,16 @@ footer a {
 .social-links {
 	display: flex;
 	justify-content: center;
-	gap: 30px;
+	gap: 3.5rem;
 	margin-bottom: 90px;
 }
 .social-links a img {
-	width: 30px;
+	width: 2.2rem;
 	height: auto;
 }
 
 footer div {
-	margin-top: 20px;
+	margin-top: 1.2rem;
 }
 
 .titre {
@@ -131,7 +131,10 @@ p.titre {
 	margin-bottom: 3rem;
 }
 .space {
-	height: 2.5rem;
+	height: 1.8rem;
+}
+.spaceMenu {
+	height: 1.3rem;
 }
 .logoFooter{
 	width: 7rem;
