@@ -194,6 +194,10 @@ p {
 	.imgWrapper {
 		width: 90%;
 	}
+	/* .imgContainer img{
+		transform: scale(0.5);
+	
+	} */
 }
 
 @media (max-width: 768px) {
@@ -208,6 +212,10 @@ p {
 		width: 100%;
 		margin: 1rem 0;
 	}
+	.imgContainer img{
+		transform: scale(0.8);
+	}
+	
 	.textWrapper {
 		margin-left: 1rem;
 		padding: 1rem;
@@ -224,6 +232,7 @@ p {
 		font-size: 0.9rem;
 	}
 }
+
 
 @media (max-width: 480px) {
 	.container,
@@ -251,5 +260,8 @@ p {
 	.cta {
 		font-size: 1rem;
 		max-width: 15rem;
+	}
+	.img{
+		transform: scale(0.85);
 	}
 }
