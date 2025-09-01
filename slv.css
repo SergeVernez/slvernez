@@ -101,7 +101,7 @@ p {
 }
 
 .cta {
-	background-color: var(--couleur-orange);
+	background-color: var(--couleur-noire);
 	color: var(--couleur-principale-body);
 	width: 100%;
 	max-width: 18.75rem;
