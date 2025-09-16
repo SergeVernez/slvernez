@@ -1,25 +1,48 @@
-require('dotenv').config(); // charge les variables .env
-const nodemailer = require('nodemailer');
+// 1. Charger les variables d'environnement
+require('dotenv').config();
 
+// 🔹 2. Importer les modules
+const express = require('express');
+const nodemailer = require('nodemailer');
+const app = express();
+
+// 🔹 3. Middlewares pour lire les données du formulaire
+app.use(express.json());
+app.use(express.urlencoded({ extended: true })); // ← Ajout ici
+app.use(express.static(__dirname));
+
+// 4. Configurer le transporteur Nodemailer
 const transporter = nodemailer.createTransport({
-  service: 'gmail', // ou un autre service (ex : outlook, yahoo)
+  service: 'gmail',
   auth: {
-    user: 'votre_email@gmail.com',
-    pass: 'votre_mot_de_passe', // Attention : utilisez des variables d'environnement pour des raisons de sécurité !
-  },
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS
+  }
 });
 
-const mailOptions = {
-  from: 'votre_email@gmail.com',
-  to: 'destinataire@gmail.com',
-  subject: 'Sujet de l’email',
-  text: 'Bonjour, ceci est un test envoyé avec Nodemailer !',
-};
+// 5. Créer la route POST pour le formulaire de contact
+app.post('/send', (req, res) => {
+  const { prenom, nom, email, message } = req.body;
 
-transporter.sendMail(mailOptions, (error, info) => {
-  if (error) {
-    console.log('Erreur :', error);
-  } else {
-    console.log('Email envoyé : ' + info.response);
-  }
+  const mailOptions = {
+    from: email,
+    to: process.env.EMAIL_USER,
+    subject: `Message de ${prenom} ${nom}`,
+    text: message
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error('Erreur :', error);
+      res.status(500).send('Erreur lors de l’envoi');
+    } else {
+      console.log('Email envoyé : ' + info.response);
+      res.status(200).send('Message envoyé avec succès');
+    }
+  });
+});
+
+// 6. Lancer le serveur
+app.listen(3000, () => {
+  console.log('Serveur lancé sur le port 3000');
 });
