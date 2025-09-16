@@ -1,0 +1,3 @@
+# Ne pas suivre les fichiers sensibles ou lourds
+.env
+node_modules/
