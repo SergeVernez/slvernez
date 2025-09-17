@@ -37,7 +37,7 @@ app.post('/send', (req, res) => {
       res.status(500).send('Erreur lors de l’envoi');
     } else {
       console.log('Email envoyé : ' + info.response);
-      res.status(200).send('Message envoyé avec succès');
+      res.redirect('https://sergevernez.github.io/slvernez/confirmation.html');
     }
   });
 });
