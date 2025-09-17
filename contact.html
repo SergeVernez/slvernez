@@ -12,11 +12,7 @@
 		<script src="header.js" defer></script>
 		<script src="footer.js" defer></script>
 		<script src="loadFonts.js" defer></script>
-		<script>
-  fetch("https://slvernez-backend.onrender.com", { method: "GET" })
-    .then(() => console.log("Backend réveillé"))
-    .catch(() => console.log("Backend en veille"));
-</script>
+		
 	</head>
 	<body>
 		<div id="header-container"></div>
@@ -54,5 +50,10 @@
 		
 		</main>
 		<div id="footer-container"></div>
+		<script>
+  fetch("https://slvernez-backend.onrender.com", { method: "GET" })
+    .then(() => console.log("Backend réveillé"))
+    .catch(() => console.log("Backend en veille"));
+</script>
 	</body>
 </html>
