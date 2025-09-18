@@ -7,7 +7,7 @@ const nodemailer = require('nodemailer');
 const app = express();
 const cors = require('cors');
 app.use(cors({
-  origin: 'https://sergevernez.github.io' // ← ton domaine GitHub Pages
+  origin: ['https://sergevernez.github.io', 'http://localhost:3000'] // ← ton domaine GitHub Pages
 }));
 
 // 🔹 3. Middlewares pour lire les données du formulaire
