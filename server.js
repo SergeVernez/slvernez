@@ -5,6 +5,10 @@ require('dotenv').config();
 const express = require('express');
 const nodemailer = require('nodemailer');
 const app = express();
+const cors = require('cors');
+app.use(cors({
+  origin: 'https://sergevernez.github.io/slvernez/' // ← ton domaine GitHub Pages
+}));
 
 // 🔹 3. Middlewares pour lire les données du formulaire
 app.use(express.json());
