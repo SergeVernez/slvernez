@@ -39,7 +39,7 @@
 								<textarea id="message" name="message" placeholder="Votre message" required></textarea>
 							</div>
 							<div class="submit">
-								<button type="submit">Envoyer</button>
+								<button type="submit" disabled>Envoyer</button>
 							</div>
 						</form>					
 					</div>					
@@ -52,30 +52,37 @@
 		<div id="footer-container"></div>
 		<script>
   const loader = document.createElement("div");
-  loader.innerText = "Connexion au serveur...";
+  loader.innerHTML = `<div class="spinner"></div>`;
   loader.style = `
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: #222;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    font-family: sans-serif;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
     z-index: 9999;
   `;
   document.body.appendChild(loader);
 
+  const style = document.createElement("style");
+  style.innerHTML = `
+    .spinner {
+      width: 100%;
+      height: 100%;
+      border: 4px solid #ccc;
+      border-top: 4px solid #222;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  `;
+  document.head.appendChild(style);
+
   fetch("https://slvernez-backend.onrender.com")
-    .then(() => {
-      console.log("Backend réveillé");
-      loader.remove();
-    })
-    .catch(() => {
-      loader.innerText = "Le serveur met du temps à répondre...";
-      setTimeout(() => loader.remove(), 5000);
-    });
+    .then(() => {loader.remove();
+	document.getElementById("submitBtn").disabled = false;})
+    .catch(() => setTimeout(() => loader.remove(), 5000));
 </script>
 	</body>
 </html>

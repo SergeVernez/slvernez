@@ -166,8 +166,9 @@
   `;
   document.head.appendChild(style);
 
-  fetch("https://slvernez-backend.onrender.com")
-    .then(() => loader.remove())
+ fetch("https://slvernez-backend.onrender.com")
+    .then(() => {loader.remove();
+	document.getElementById("submitBtn").disabled = false;})
     .catch(() => setTimeout(() => loader.remove(), 5000));
 </script>
 	</body>
