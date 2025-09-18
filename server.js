@@ -25,11 +25,18 @@ app.post('/send', (req, res) => {
   const { prenom, nom, email, message } = req.body;
 
   const mailOptions = {
-    from: email,
-    to: process.env.EMAIL_USER,
-    subject: `Message de ${prenom} ${nom}`,
-    text: message
-  };
+  from: process.env.EMAIL_USER, // ← ton adresse Gmail
+  to: process.env.EMAIL_USER,   // ← tu reçois le mail
+  subject: `Message de ${prenom} ${nom}`,
+  text: `Message reçu via le formulaire :
+
+Nom : ${nom}
+Prénom : ${prenom}
+Email de contact : ${email}
+
+Message :
+${message}`
+};
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
