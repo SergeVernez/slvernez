@@ -1,65 +1,49 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>footer</title>
-    <script src="loadFonts.js"></script>
-    <link rel="stylesheet" href="slv.css" />
-  </head>
-  <body>
-    <footer>
-      <div class="content">
-        <div class="menuSecondaire">
-          <p class="titre">Menu</p>
-          <div class="spaceMenu"></div>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">À propos</a></li>
-            <li><a href="cv.html">Mon parcours</a></li>
-          </ul>
-        </div>
-
-        <div class="separator"></div>
-
-        <div class="contactInfo">
-          <p class="titre">Me contacter</p>
-          <div class="space"></div>
-          <p id="emailDisplay"></p>
-          <p><a href="tel:0672165021">06 72 16 50 21</a></p>
-          <div class="space"></div>
-          <p>Serge Ludovic Vernez | 2025 - Lille, France</p>
-          <a href="mentionsLegales.html">Mentions légales</a>
-        </div>
-
-        <div class="separator"></div>
-
-        <div class="suivezMoi">
-          <p class="titre">Suivez-moi</p>
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/serge-vernez" target="_blank">
-              <img src="asset/picto/linkedin--network-linkedin-professional.png" alt="" />
-            </a>
-            <a href="#">
-              <img src="asset/picto/facebook-1--media-facebook-social.png" alt="" />
-            </a>
-          </div>
-          <div>
-            <a href="index.html">
-              <img src="asset/logo/LogoSLV.svg" class="logoFooter" alt="Logo" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <script>
-      const user = "slvfrontdesign";
-      const domain = "gmail.com";
-      const emailDisplay = document.getElementById("emailDisplay");
-      emailDisplay.innerHTML = `<a href="mailto:${user}@${domain}">${user}[at]${domain}</a>`;
-    </script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>footer</title>
+		<script src="loadFonts.js"></script>
+		<!-- <link rel="stylesheet" href="cv.css" /> -->
+		<link rel="stylesheet" href="slv.css" />
+	</head>
+	<footer>
+		<div class="content">
+			<div class="menuSecondaire">
+				<p class="titre">Menu</p>
+				<div class="spaceMenu"></div>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="about.html">À propos</a></li>
+					<li><a href="cv.html">Mon parcours</a></li>
+				</ul>
+			</div>
+			<div class="separator"></div>
+			<!-- Séparateur -->
+			<div class="contactInfo">
+				<p class="titre">Me contacter</p>
+				<div class="space"></div>
+				<a href="mailto:slvfrontdesign@gmail.com">slvfrontdesign[at]gmail.com</a>
+				<p><a href="tel:0672165021">06 72 16 50 21</a></p>
+				<div class="space"></div>
+				<p>Serge Ludovic Vernez | 2025 - Lille, France</p>
+				<a href="mentionsLegales.html">Mentions légales</a>
+			</div>
+			<div class="separator"></div>
+			<!-- Séparateur -->
+			<div class="suivezMoi">
+				<p class="titre">Suivez-moi</p>
+				<div class="social-links">
+					<a href="https://www.linkedin.com/in/serge-vernez" target="_blank"><img src="asset/picto/linkedin--network-linkedin-professional.png" alt="" /></a>
+					<a href="#"><img src="asset/picto/facebook-1--media-facebook-social.png" alt="" /></a>
+				</div>
+				<div>
+					<a href="index.html"><img src="asset/logo/LogoSLV.svg" class="logoFooter" alt="Logo" /></a>
+				</div>
+			</div>
+		</div>
+	</footer>
 </html>
