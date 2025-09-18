@@ -137,5 +137,32 @@
 			</section>
 		</main>
 		<div id="footer-container"></div>
+		<script>
+  const loader = document.createElement("div");
+  loader.innerText = "Connexion au serveur...";
+  loader.style = `
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    z-index: 9999;
+  `;
+  document.body.appendChild(loader);
+
+  fetch("https://slvernez-backend.onrender.com")
+    .then(() => {
+      console.log("Backend réveillé");
+      loader.remove();
+    })
+    .catch(() => {
+      loader.innerText = "Le serveur met du temps à répondre...";
+      setTimeout(() => loader.remove(), 5000);
+    });
+</script>
 	</body>
 </html>
