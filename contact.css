@@ -32,7 +32,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	gap: 9.4rem;
+	gap: 6.25rem;
 }
 .contactText h2 {
 	margin: inherit;
