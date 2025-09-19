@@ -1,0 +1,68 @@
+/* Confirmation.css */
+
+:root {
+	--couleur-principale-body: #faf7f0;
+	--couleur-orange: #b17457;
+	--couleur-noire: #131313;
+	--couleur-secondaire-claire: #d8d2c2;
+}
+
+body {
+	background-color: var(--couleur-principale-body);
+	color: var(--couleur-noire);
+	font-family: "Montserrat", sans-serif;
+	line-height: 1.6;
+	text-align: center;
+	padding: 5rem 2rem;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+}
+
+h1 {
+	font-size: 2.5rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+p {
+	font-size: 1.25rem;
+	margin-bottom: 2rem;
+}
+
+.cta {
+	background-color: var(--couleur-orange);
+	color: var(--couleur-principale-body);
+	padding: 1rem 2rem;
+	font-size: 1.25rem;
+	text-decoration: none;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 3px 3px 5px var(--couleur-secondaire-claire);
+	transition: transform 0.3s ease-in-out;
+}
+
+.cta:hover {
+	transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	h1 {
+		font-size: 2rem;
+	}
+	p {
+		font-size: 1.125rem;
+	}
+	.cta {
+		width: 100%;
+		max-width: 300px;
+		font-size: 1.125rem;
+	}
+}
