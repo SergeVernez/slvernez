@@ -39,7 +39,7 @@ body {
 	padding: 0 100px;
 	display: flex;
 	flex-direction: column;
-	gap: 7.5rem;
+	gap: 5rem;
 }
 .aboutContentContainer h2 {
 	margin: inherit;
