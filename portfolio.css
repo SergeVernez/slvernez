@@ -56,14 +56,12 @@
 	margin-top: 10px;
 	padding: 1rem 3rem;
 }
-.h2 {
-	width: 100%;
+.portfolioSection h2 {
 	margin-bottom: 5rem;
 }
 
-.p {
-	width: 100;
-	margin-bottom: 5rem;
+.portfolioSection p {
+	margin-bottom: 2rem;
 }
 
 @media (max-width: 1024px) {
