@@ -107,6 +107,11 @@ button:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
+
+	.contactText .ctaContainer {
+		display: none;
+	}
+
 	.contactSection {
 		flex-direction: column;
 		padding: 0 2.5rem;
