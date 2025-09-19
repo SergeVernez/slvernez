@@ -59,11 +59,12 @@
 }
 .h2 {
 	margin-bottom: 5rem;
+	text-align: left;
 }
 
 p {
 	margin-bottom: 2rem;
-
+	text-align: left;
 }
 
 @media (max-width: 1024px) {
