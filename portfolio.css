@@ -12,9 +12,15 @@
 * {
 	box-sizing: border-box;
 }
-.container {
+/* .container {
 	/* width: 50%; */
 	flex-direction: column;
+} */
+.container {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	padding: 0 3rem;
 }
 
 .row {
@@ -44,8 +50,8 @@
 .ctaContainer {
 	padding: 4rem 15rem;
 	display: flex;
-	/* justify-content: center; */
-	/* align-items: center; */
+	justify-content: center;
+	align-items: center;
 }
 
 
