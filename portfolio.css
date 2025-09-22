@@ -12,6 +12,17 @@
 * {
 	box-sizing: border-box;
 }
+a {
+  color: var(--couleur-orange); /* ou une autre couleur de ta palette */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--couleur-foncee); /* effet au survol */
+  text-decoration: underline;   /* ou un effet plus subtil */
+}
 
 .introContainer {
 	width: 80%;
