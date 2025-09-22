@@ -14,11 +14,11 @@
 }
 
 .introContainer {
-	width: 90%;
-	/* padding: 0 300px 200px; */
+	width: 80%;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: -48px;
+	margin-left: 5rem;
 	/* gap: 5rem; */
 }
 .grid {
