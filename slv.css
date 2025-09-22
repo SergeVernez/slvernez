@@ -6,6 +6,7 @@
 }
 
 :root {
+	font-family: "Montserrat", sans-serif;
 	font-size: 16px;
 	--couleur-principale-body: #faf7f0;
 	--couleur-secondaire-claire: #d8d2c2;
