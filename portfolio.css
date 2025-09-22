@@ -62,17 +62,14 @@
 	margin-top: 10px;
 	padding: 1rem 3rem;
 }
-/* h2 {
-	margin-bottom: 3rem;
-	text-align: left;
-	
+h2 {
+	margin-bottom: 3rem;	
 }
 
 p {
-	margin-bottom: 1.5rem;
-	text-align: left;
-	
-} */
+	margin-bottom: 1.5rem;	
+}
+
 
 @media (max-width: 1024px) {
 	.column {
