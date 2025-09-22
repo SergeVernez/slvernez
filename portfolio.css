@@ -117,4 +117,8 @@ p {
 	.row {
 		padding: 0;
 	}
+	.introContainer {
+	margin-left: 0rem;
+	margin-bottom: -80px;
+}
 }
